@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  padding-inline: var(--space-xs-xl);
+  padding-inline: var(--space-s-xl);
   padding-bottom: var(--space-s);
   background-color: var(--background);
   color: var(--body);
