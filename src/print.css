@@ -1,0 +1,18 @@
+@media print {
+  body {
+    font-size: 18px;
+  }
+
+  * {
+    color: #000;
+  }
+
+  img {
+    display: none;
+  }
+
+  * {
+    box-shadow: none;
+    background-color: transparent;
+  }
+}

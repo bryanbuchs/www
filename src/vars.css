@@ -1,0 +1,53 @@
+:root {
+  /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,21,1.25,5,2,&s=0.5,1.5|2|2.5,s-xl|s-l|xs-m&g=s,l,xl,12 */
+
+  --space-xs: clamp(0.5625rem, 0.519rem + 0.2174vw, 0.6875rem);
+  --space-s: clamp(1.125rem, 1.0598rem + 0.3261vw, 1.3125rem);
+  --space-m: clamp(1.6875rem, 1.5788rem + 0.5435vw, 2rem);
+  --space-l: clamp(2.25rem, 2.1196rem + 0.6522vw, 2.625rem);
+  --space-xl: clamp(2.8125rem, 2.6386rem + 0.8696vw, 3.3125rem);
+
+  /* One-up pairs */
+  --space-xs-s: clamp(0.5625rem, 0.3016rem + 1.3043vw, 1.3125rem);
+  --space-s-m: clamp(1.125rem, 0.8207rem + 1.5217vw, 2rem);
+  --space-m-l: clamp(1.6875rem, 1.3614rem + 1.6304vw, 2.625rem);
+  --space-l-xl: clamp(2.25rem, 1.8804rem + 1.8478vw, 3.3125rem);
+
+  /* Custom pairs */
+  --space-s-xl: clamp(1.125rem, 0.3641rem + 3.8043vw, 3.3125rem);
+  --space-s-l: clamp(1.125rem, 0.6033rem + 2.6087vw, 2.625rem);
+  --space-xs-m: clamp(0.5625rem, 0.0625rem + 2.5vw, 2rem);
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.25,1240,22,1.25,4,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-xl&g=s,l,xl,12 */
+
+:root {
+  --font-size-0: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
+  --font-size-1: clamp(1.4063rem, 1.2976rem + 0.5435vw, 1.7188rem);
+  --font-size-2: clamp(1.7578rem, 1.6219rem + 0.6793vw, 2.1484rem);
+  --font-size-3: clamp(2.1973rem, 2.0274rem + 0.8492vw, 2.6855rem);
+  --font-size-4: clamp(2.7466rem, 2.5343rem + 1.0615vw, 3.3569rem);
+}
+
+/* https://www.joshwcomeau.com/shadow-palette/ */
+
+:root {
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low: 0px 0.5px 0.6px hsl(var(--shadow-color) / 0.15),
+    0px 2.1px 2.4px -2.5px hsl(var(--shadow-color) / 0.15);
+  --shadow-elevation-medium: 0px 0.5px 0.6px hsl(var(--shadow-color) / 0.14),
+    0px 2.7px 3px -1.2px hsl(var(--shadow-color) / 0.14),
+    -0.1px 10.5px 11.8px -2.5px hsl(var(--shadow-color) / 0.14);
+  --shadow-elevation-high: 0px 0.5px 0.6px hsl(var(--shadow-color) / 0.13),
+    -0.1px 4px 4.5px -0.5px hsl(var(--shadow-color) / 0.13),
+    -0.1px 8.5px 9.6px -1px hsl(var(--shadow-color) / 0.13),
+    -0.2px 16.4px 18.5px -1.5px hsl(var(--shadow-color) / 0.13),
+    -0.4px 30.2px 34px -2px hsl(var(--shadow-color) / 0.13),
+    -0.7px 52.4px 59px -2.5px hsl(var(--shadow-color) / 0.13);
+}
+
+:root {
+  --background: var(--color-amber-1);
+  --body: var(--color-amber-6);
+  --body-light: var(--color-amber-5);
+}
