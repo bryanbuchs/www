@@ -16,7 +16,7 @@ body {
 }
 
 body > * {
-  max-width: 75ch;
+  max-width: 66ch;
   margin-inline: auto;
 }
 
