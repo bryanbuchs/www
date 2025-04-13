@@ -1,32 +1,38 @@
-:root {
-  /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,21,1.25,5,2,&s=0.5,1.5|2|2.5,s-xl|s-l|xs-m&g=s,l,xl,12 */
+/* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,21,1.25,5,2,&s=0.5|0.25,1.5|2|2.5|5,s-xl|s-l|xs-m|2xl-2xs&g=s,l,xl,12 */
 
+:root {
+  --space-2xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
   --space-xs: clamp(0.5625rem, 0.519rem + 0.2174vw, 0.6875rem);
   --space-s: clamp(1.125rem, 1.0598rem + 0.3261vw, 1.3125rem);
   --space-m: clamp(1.6875rem, 1.5788rem + 0.5435vw, 2rem);
   --space-l: clamp(2.25rem, 2.1196rem + 0.6522vw, 2.625rem);
   --space-xl: clamp(2.8125rem, 2.6386rem + 0.8696vw, 3.3125rem);
+  --space-2xl: clamp(5.625rem, 5.2989rem + 1.6304vw, 6.5625rem);
 
   /* One-up pairs */
+  --space-2xs-xs: clamp(0.3125rem, 0.1821rem + 0.6522vw, 0.6875rem);
   --space-xs-s: clamp(0.5625rem, 0.3016rem + 1.3043vw, 1.3125rem);
   --space-s-m: clamp(1.125rem, 0.8207rem + 1.5217vw, 2rem);
   --space-m-l: clamp(1.6875rem, 1.3614rem + 1.6304vw, 2.625rem);
   --space-l-xl: clamp(2.25rem, 1.8804rem + 1.8478vw, 3.3125rem);
+  --space-xl-2xl: clamp(2.8125rem, 1.5082rem + 6.5217vw, 6.5625rem);
 
   /* Custom pairs */
   --space-s-xl: clamp(1.125rem, 0.3641rem + 3.8043vw, 3.3125rem);
   --space-s-l: clamp(1.125rem, 0.6033rem + 2.6087vw, 2.625rem);
   --space-xs-m: clamp(0.5625rem, 0.0625rem + 2.5vw, 2rem);
+  --space-2xl-2xs: clamp(0.3125rem, 7.4728rem + -9.2391vw, 5.625rem);
 }
 
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.25,1240,22,1.25,4,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-xl&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=320,17,1.25,1240,21,1.2,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-xl&g=s,l,xl,12 */
 
 :root {
-  --font-size-0: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
-  --font-size-1: clamp(1.4063rem, 1.2976rem + 0.5435vw, 1.7188rem);
-  --font-size-2: clamp(1.7578rem, 1.6219rem + 0.6793vw, 2.1484rem);
-  --font-size-3: clamp(2.1973rem, 2.0274rem + 0.8492vw, 2.6855rem);
-  --font-size-4: clamp(2.7466rem, 2.5343rem + 1.0615vw, 3.3569rem);
+  --font-size--1: clamp(0.85rem, 0.7652rem + 0.4239vw, 1.0938rem);
+  --font-size-0: clamp(1.0625rem, 0.9755rem + 0.4348vw, 1.3125rem);
+  --font-size-1: clamp(1.3281rem, 1.2423rem + 0.4293vw, 1.575rem);
+  --font-size-2: clamp(1.6602rem, 1.5802rem + 0.3997vw, 1.89rem);
+  --font-size-3: clamp(2.0752rem, 2.0081rem + 0.3353vw, 2.268rem);
+  --font-size-4: clamp(2.594rem, 2.5496rem + 0.2219vw, 2.7216rem);
 }
 
 /* https://www.joshwcomeau.com/shadow-palette/ */
