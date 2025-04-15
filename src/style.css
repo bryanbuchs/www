@@ -130,3 +130,25 @@ h3 {
 h3 + :not(.description) {
   margin-top: 1lh;
 }
+
+dl, dt, dd {
+  margin: 0;
+}
+
+dl {
+  font-size: var(--font-size--1);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1ch;
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+dt {
+  font-weight: 500;
+  text-align: right;
+}
+
+dd {
+  text-align: left;
+}
