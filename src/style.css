@@ -39,7 +39,7 @@ li {
 
 p,
 ul {
-  margin-bottom: var(--space-s-m);
+  margin-bottom: 1lh;
 }
 
 strong {
@@ -80,7 +80,6 @@ header img {
 header h1 {
   margin-bottom: 0;
   font-weight: 600;
-  margin-bottom: 0;
   font-size: var(--font-size-3);
 }
 
@@ -129,5 +128,5 @@ h3 {
 }
 
 h3 + :not(.description) {
-  margin-top: 1em;
+  margin-top: 1lh;
 }
