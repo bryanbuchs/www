@@ -1,6 +1,6 @@
 import './reset.css'
 
-import 'reasonable-colors/reasonable-colors-hsl.css'
+import 'reasonable-colors/reasonable-colors.css'
 import './vars.css'
 
 import './font.css'

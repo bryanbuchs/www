@@ -1,3 +1,26 @@
+
+:root {
+  --background: var(--color-cinnamon-1);
+  --body: var(--color-cinnamon-6);
+  --body-light: var(--color-cinnamon-5);
+  --link: var(--color-cerulean-4);
+  --link-visited: var(--color-cerulean-4);
+  --link-hover: var(--color-cerulean-3);
+  --marker: var(--color-cinnamon-5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-powder-6);
+    --body: #efefef;
+    --body-light: #ffffff;
+    --link: var(--color-powder-2);
+    --link-visited: var(--color-powder-2);
+    --link-hover: var(--color-powder-1);
+    --marker: var(--color-powder-3);
+  }
+}
+
 html,
 body {
   margin: 0;
@@ -7,8 +30,15 @@ body {
   font-size: var(--font-size-0);
 }
 
+
 body {
   padding: var(--space-s);
+  line-height: 1.5;
+  text-decoration-skip-ink: auto;
+  font-optical-sizing: auto;
+  font-variant-ligatures: common-ligatures no-discretionary-ligatures
+    no-historical-ligatures contextual;
+  font-kerning: normal;
 }
 
 * + * {
@@ -16,13 +46,13 @@ body {
 }
 
 body > * {
-  max-width: 66ch;
+  max-width: 60ch;
   margin-inline: auto;
 }
 
-p,
-li {
-  text-align: pretty;
+:where(ul, ol, dl, dt, dd, p, figure, blockquote) {
+  hanging-punctuation: first last;
+  text-wrap: pretty;
 }
 
 :where(li) {
@@ -30,7 +60,7 @@ li {
 }
 
 :where(li)::marker {
-  color: var(--color-cerulean-6);
+  color: var(--marker);
 }
 
 :where(li + li) {
@@ -47,16 +77,22 @@ strong {
 }
 
 a {
-  color: var(--color-cerulean-4);
+  color: var(--link);
 }
 
 a:visited {
-  color: var(--color-blue-4);
+  color: var(--link-visited);
 }
 
 a:hover,
 a:focus-visible {
-  color: var(--color-cerulean-3);
+  color: var(--link-hover);
+}
+
+a:focus-visible {
+  outline-offset: 0.25em;
+  outline-width: 0.25em;
+  outline-color: currentColor;
 }
 
 ul {
@@ -97,7 +133,7 @@ nav ul {
   align-items: center;
   justify-content: center;
   column-gap: 1rem;
-  color: var(--color-gray-5);
+  color: var(--body-light);
 }
 
 nav li {
@@ -131,7 +167,9 @@ h3 + :not(.description) {
   margin-top: 1lh;
 }
 
-dl, dt, dd {
+dl,
+dt,
+dd {
   margin: 0;
 }
 

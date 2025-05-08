@@ -52,8 +52,3 @@
     -0.7px 52.4px 59px -2.5px hsl(var(--shadow-color) / 0.13);
 }
 
-:root {
-  --background: var(--color-amber-1);
-  --body: var(--color-amber-6);
-  --body-light: var(--color-amber-5);
-}
