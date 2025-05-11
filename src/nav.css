@@ -1,0 +1,16 @@
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: var(--size-fluid-2);
+  color: var(--body-light);
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

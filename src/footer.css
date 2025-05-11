@@ -1,0 +1,30 @@
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid currentColor;
+  padding-top: 1rem;
+
+  dl,
+  dt,
+  dd {
+    margin: 0;
+  }
+
+  dl {
+    font-size: var(--font-size-0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+
+    margin-inline: auto;
+  }
+
+  dt {
+    font-weight: 500;
+    text-align: right;
+  }
+
+  dd {
+    text-align: left;
+  }
+}

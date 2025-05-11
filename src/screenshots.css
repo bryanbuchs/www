@@ -1,0 +1,60 @@
+.screenshots {
+  margin-top: 1rem;
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  a:has(img) {
+    display: block;
+    box-shadow: var(--shadow-3);
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+    transition: all 0.1s var(--ease-out-4);
+    will-change: transform, box-shadow;
+    transform-origin: bottom center;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-4);
+    }
+
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+  }
+
+  img {
+    aspect-ratio: var(--ratio-golden);
+    object-position: top;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+  }
+
+  figcaption {
+    padding-inline: var(--size-1);
+    margin-top: var(--size-2);
+    font-size: var(--font-size-2);
+    line-height: 1.4;
+  }
+}
+
+.pswp__dynamic-caption--below {
+  width: 100% !important;
+  max-width: var(--size-content-3) !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin-inline: auto !important;
+  text-align: center;
+  padding-top: 20px;
+  font-family: var(--font-rounded-sans);
+  font-size: var(--font-size-2);
+}

@@ -1,0 +1,27 @@
+header {
+  color: var(--body-light);
+  text-align: center;
+
+  margin-bottom: 1lh;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1lh;
+
+
+
+  h1 {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: var(--font-size-5);
+    color: var(--body-dark);
+  }
+
+  p {
+    font-size: var(--font-size-2);
+    margin-bottom: 0.25rem;
+  }
+
+  p.tagline {
+    font-size: var(--font-size-1);
+    font-style: italic;
+  }
+}
