@@ -20,7 +20,12 @@ for img in ./source-images/*.png; do
   [ -f "$img" ] || continue  # Skip if no matches found
   filename=$(basename -- "$img")
   name="${filename%.*}"
-  convert "$img" -resize 320x -quality 100 "./public/images/thumbnails/${name}.webp"
+  convert "$img" \
+    -filter Mitchell \
+    -resize 400x \
+    -unsharp 0.25x0.25+8+0.065 \
+    -quality 90 \
+    "./public/images/thumbnails/${name}.webp"
   echo "- ${name}"
 done
 

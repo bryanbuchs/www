@@ -32,7 +32,7 @@
   }
 
   img {
-    aspect-ratio: var(--ratio-golden);
+    aspect-ratio: 400 / 235;
     object-position: top;
     object-fit: cover;
     display: block;
