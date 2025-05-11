@@ -21,6 +21,7 @@ import './print.css'
 
 import PhotoSwipe from 'photoswipe'
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
+import ObjectPosition from '@vovayatsyuk/photoswipe-object-position'
 import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin'
 import 'photoswipe/style.css'
 import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
@@ -28,7 +29,10 @@ import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
 const lightbox = new PhotoSwipeLightbox({
   gallery: '.screenshots',
   children: 'a:has(img)',
-  showHideAnimationType: 'fade',
+  // showHideAnimationType: 'fade',
+  showAnimationDuration: 400,
+  hideAnimationDuration: 250,
+  easing: 'cubic-bezier(0.77, 0, 0.175, 1)',
   loop: false,
   indexIndicatorSep: ' of ',
   padding: { top: 20, bottom: 20, left: 20, right: 20 },
@@ -44,5 +48,7 @@ const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
       .querySelector('figcaption').innerHTML
   }
 })
+
+new ObjectPosition(lightbox)
 
 lightbox.init()

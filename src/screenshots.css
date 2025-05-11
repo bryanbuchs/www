@@ -19,6 +19,7 @@
     transition: all 0.1s var(--ease-out-4);
     will-change: transform, box-shadow;
     transform-origin: bottom center;
+    /* overflow: hidden; */
 
     &:hover {
       transform: scale(1.05);
