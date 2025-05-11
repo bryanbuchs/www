@@ -14,7 +14,7 @@
   a:has(img) {
     display: block;
     box-shadow: var(--shadow-3);
-    outline: 2px solid currentColor;
+    outline: 1px solid currentColor;
     outline-offset: 2px;
     transition: all 0.1s var(--ease-out-4);
     will-change: transform, box-shadow;
