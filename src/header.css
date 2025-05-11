@@ -2,11 +2,9 @@ header {
   color: var(--body-light);
   text-align: center;
 
-  margin-bottom: 1lh;
   border-bottom: 1px solid currentColor;
-  padding-bottom: 1lh;
-
-
+  padding-bottom: 0.5lh;
+  margin-bottom: 0.5lh;
 
   h1 {
     margin-bottom: 0;

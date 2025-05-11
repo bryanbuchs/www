@@ -19,6 +19,16 @@ import './screenshots.css'
 
 import './print.css'
 
+const stickyHeaders = document.querySelectorAll('section>h2')
+stickyHeaders.forEach(el => {
+  const observer = new IntersectionObserver(
+    ([e]) => e.target.classList.toggle('is-stuck', e.intersectionRatio < 1),
+    { threshold: [1] }
+  )
+
+  observer.observe(el)
+})
+
 import PhotoSwipe from 'photoswipe'
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import ObjectPosition from '@vovayatsyuk/photoswipe-object-position'
