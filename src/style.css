@@ -26,14 +26,14 @@ html {
   text-decoration-skip-ink: auto;
   font-optical-sizing: auto;
   font-kerning: normal;
-  font-size: var(--font-size-fluid-1);
+  font-size: clamp(1.25rem, 1.0185rem + 0.7407vw, 1.5rem);
 
   color: var(--body);
 }
 
 body {
   line-height: 1.5;
-  padding: 2rem;
+  padding-block: 1rem;
   background-color: var(--background);
 }
 
