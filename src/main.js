@@ -32,9 +32,9 @@ stickyHeaders.forEach(el => {
 import PhotoSwipe from 'photoswipe'
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import ObjectPosition from '@vovayatsyuk/photoswipe-object-position'
-import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin'
+// import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin'
 import 'photoswipe/style.css'
-import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
+// import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css'
 
 const lightbox = new PhotoSwipeLightbox({
   gallery: '.screenshots',
@@ -49,15 +49,15 @@ const lightbox = new PhotoSwipeLightbox({
   pswpModule: PhotoSwipe
 })
 
-const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
-  type: 'below',
-  captionContent: slide => {
-    return slide.data.element
-      .querySelector('img')
-      .closest('figure')
-      .querySelector('figcaption').innerHTML
-  }
-})
+// new PhotoSwipeDynamicCaption(lightbox, {
+//   type: 'below',
+//   captionContent: slide => {
+//     return slide.data.element
+//       .querySelector('img')
+//       .closest('figure')
+//       .querySelector('figcaption').innerHTML
+//   }
+// })
 
 new ObjectPosition(lightbox)
 

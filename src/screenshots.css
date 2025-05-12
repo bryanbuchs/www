@@ -13,22 +13,15 @@
 
   a:has(img) {
     display: block;
-    box-shadow: var(--shadow-3);
-    outline: 1px solid var(--body-light);
+    box-shadow: var(--shadow-2);
     outline-offset: 2px;
     transition: all 0.1s var(--ease-out-4);
-    will-change: transform, box-shadow;
+    will-change: box-shadow;
     transform-origin: bottom center;
-    /* overflow: hidden; */
 
-    &:hover {
-      transform: scale(1.05);
+    &:hover,
+    &:active {
       box-shadow: var(--shadow-4);
-    }
-
-    &:focus-visible {
-      outline: 2px solid currentColor;
-      outline-offset: 2px;
     }
   }
 
@@ -43,11 +36,11 @@
   figcaption {
     padding-inline: var(--size-1);
     margin-top: var(--size-2);
-    font-size: var(--font-size-2);
+    font-size: var(--font-size-0);
     line-height: 1.4;
   }
 }
-
+/*
 .pswp__dynamic-caption--below {
   width: 100% !important;
   max-width: var(--size-content-3) !important;
@@ -58,4 +51,4 @@
   padding-top: 20px;
   font-family: var(--font-rounded-sans);
   font-size: var(--font-size-2);
-}
+} */
