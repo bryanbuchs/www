@@ -16,7 +16,6 @@
     "@vovayatsyuk/photoswipe-object-position": "^1.0.0",
     "open-props": "^1.7.15",
     "photoswipe": "^5.4.4",
-    "photoswipe-dynamic-caption-plugin": "^1.2.7",
     "reasonable-colors": "^0.4.0"
   }
 }
