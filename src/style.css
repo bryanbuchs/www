@@ -89,6 +89,10 @@ h2 {
   margin-top: 0;
   padding-block: 0.5rem;
   margin-bottom: 0;
+  color: var(--body-dark);
+}
+
+.is-sticky {
   position: sticky;
   z-index: 3;
   top: -1px;

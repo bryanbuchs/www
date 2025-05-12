@@ -19,7 +19,7 @@ import './screenshots.css'
 
 import './print.css'
 
-const stickyHeaders = document.querySelectorAll('section>h2')
+const stickyHeaders = document.querySelectorAll('.is-sticky')
 stickyHeaders.forEach(el => {
   const observer = new IntersectionObserver(
     ([e]) => e.target.classList.toggle('is-stuck', e.intersectionRatio < 1),
