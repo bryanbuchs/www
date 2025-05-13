@@ -6,9 +6,9 @@ The most challenging aspect was integrating with Stanford’s massive course dat
 
 ## Tech
 
-- Drupal CMS
+- Drupal
 - Twig
-- LESS and PostCSS
+- LESS & PostCSS
 - Vanilla JavaScript/ES6 modules
 - Webpack
 - Storybook

@@ -6,9 +6,9 @@ For the student experience, I built a custom Vue application that interfaces wit
 
 ## Tech
 
-- Drupal CMS
+- Drupal
 - Twig
-- LESS and PostCSS
+- LESS & PostCSS
 - Vanilla JavaScript/ES6 modules
 - Vue.js
 - H5P
