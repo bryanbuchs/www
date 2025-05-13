@@ -1,8 +1,14 @@
 @media print {
   body {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
+    background-color: #fff;
+    padding: 2rem;
+  }
+
+  .content {
+    grid-column: full;
   }
 
   * {
@@ -13,16 +19,26 @@
     margin-top: 0;
   }
 
-  img {
-    display: none;
+  .is-sticky {
+    position: relative;
+    z-index: unset;
+    top: unset;
+    margin-left: unset;
+    margin-right: unset;
+    padding-inline: unset;
   }
 
-  * {
-    box-shadow: none;
-    background-color: transparent;
+  .is-stuck {
+    background-color: unset;
+    box-shadow: unset;
   }
 
-  p, li {
+  p,
+  li {
     page-break-inside: avoid;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
