@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ title | default("Bryan Buchs - Senior Web Developer & Accessibility Specialist") }}</title>
+    <meta name="description" content="{{ description | default("Experienced front-end developer specializing in web accessibility and responsive design.") }}"/>
+    <meta name="author" content="Bryan Buchs"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://bryanbuchs.com{{ page.url }}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>
+  </head>
+  <body class="container">
+    {% include "header.njk" %}
+    <main class="full container">
+      {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

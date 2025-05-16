@@ -1,23 +1,25 @@
 .container {
-  --gap: var(--size-fluid-2);
-  --full: minmax(var(--gap), 1fr);
-  --content: min(var(--size-content-3), 100% - var(--gap) * 2);
+  --gap: 2rem;
+  --primary: min(var(--size-content-3), 100% - var(--gap) * 2);
   --popout: minmax(0, 3rem);
-  --feature: minmax(0, 6rem);
+  --feature: minmax(0, 3rem);
+  --full: minmax(var(--gap), 1fr);
+
 
   display: grid;
   grid-template-columns:
     [full-start] var(--full)
     [feature-start] var(--feature)
     [popout-start] var(--popout)
-    [content-start] var(--content) [content-end]
+    [primary-start] var(--primary) [primary-end]
     var(--popout) [popout-end]
     var(--feature) [feature-end]
     var(--full) [full-end];
 }
 
-:where(.container) > * {
-  grid-column: content;
+:where(.container) > *,
+:where(.primary) {
+  grid-column: primary;
 }
 
 :where(.popout) {

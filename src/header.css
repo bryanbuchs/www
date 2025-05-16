@@ -1,27 +1,34 @@
 header {
-  color: var(--body-light);
+  grid-column: popout;
+
+  border-bottom: 1px solid var(--body-light);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+
   text-align: center;
   text-wrap: balance;
 
-  border-bottom: 1px solid var(--body-light);
-  padding-bottom: 0.5lh;
-  margin-bottom: 0.5lh;
-
   h1 {
-    margin-bottom: 0;
-    font-weight: 500;
-    font-size: var(--font-size-5);
+
+    font-weight: 400;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: var(--font-size-8);
     color: var(--body-dark);
+    line-height: 1;
+    margin-bottom: 1rem;
   }
 
   p {
     font-size: var(--font-size-3);
     margin-bottom: 0.5rem;
     line-height: 1.2;
+    font-weight: 500;
   }
 
   p.tagline {
     font-size: var(--font-size-1);
     font-style: italic;
+    font-weight: 400;
+    color: var(--body-light);
   }
 }

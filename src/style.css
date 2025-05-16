@@ -1,11 +1,11 @@
 :root {
-  --background: #e2e0d9;
-  --body: #565d47;
-  --body-light: #686762;
-  --body-dark: #2d3250;
-  --link: #2d3250;
-  --link-visited: #424769;
-  --link-hover: #3a8891;
+  --background: oklch(from #e2e0d9 l c h);
+  --body: oklch(from #444036 l c h);
+  --body-light: oklch(from var(--body) calc(l + 0.1) c h);
+  --body-dark: oklch(from var(--body) calc(l - 0.2) c h);
+  --link: oklch(from #2d3250 l c h);
+  --link-visited: oklch(from var(--link) calc(l - 0.2) c h);
+  --link-hover: oklch(from var(--link) calc(l + 0.1) c h);
   --marker: var(--body-light);
 }
 
@@ -27,14 +27,21 @@ html {
   font-optical-sizing: auto;
   font-kerning: normal;
   font-size: clamp(1.25rem, 1.0185rem + 0.7407vw, 1.5rem);
-
   color: var(--body);
 }
 
 body {
+  font-family: 'Alegreya Variable', serif;
   line-height: 1.5;
-  padding-block: 1rem;
+  padding: 1rem;
   background-color: var(--background);
+}
+
+main {
+}
+
+:where(h2, h3, h4) {
+  font-weight: 400;
 }
 
 :where(li) {
@@ -89,7 +96,6 @@ h2 {
   margin-top: 0;
   padding-block: 0.5rem;
   margin-bottom: 0;
-  color: var(--body-dark);
 }
 
 .is-sticky {

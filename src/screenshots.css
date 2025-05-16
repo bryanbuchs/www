@@ -1,30 +1,20 @@
 .screenshots {
+  grid-column: popout;
+
   margin-top: 1rem;
   display: grid;
-  column-gap: 2rem;
+  column-gap: 1rem;
   row-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
 
-  figure {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  a:has(img) {
-    position: relative;
-    display: block;
-    box-shadow: var(--shadow-2);
-    outline-offset: 2px;
-    transition: all 0.1s var(--ease-out-4);
-    will-change: box-shadow;
-    transform-origin: bottom center;
-
-    &:hover,
-    &:active {
-      box-shadow: var(--shadow-4);
-    }
-  }
+figure {
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+  position: relative;
 
   span[class] {
     position: absolute;
@@ -41,7 +31,7 @@
     padding: 5px;
 
     margin: 3px;
-    border-radius: 3px;;
+    border-radius: 3px;
     box-shadow: var(--shadow-2);
 
     background: #000;
@@ -61,13 +51,11 @@
   }
 
   img {
-    aspect-ratio: 400 / 235;
-    object-position: top;
-    object-fit: cover;
     display: block;
     width: 100%;
     position: relative;
     z-index: 1;
+    box-shadow: var(--shadow-4);
   }
 
   figcaption {
@@ -77,15 +65,22 @@
     line-height: 1.4;
   }
 }
-/*
-.pswp__dynamic-caption--below {
-  width: 100% !important;
-  max-width: var(--size-content-3) !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin-inline: auto !important;
-  text-align: center;
-  padding-top: 20px;
-  font-family: var(--font-rounded-sans);
-  font-size: var(--font-size-2);
-} */
+
+figure.cropped {
+  img {
+    aspect-ratio: 400 / 235;
+    object-position: top;
+    object-fit: cover;
+  }
+
+  a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 400 / 235;
+  }
+}
