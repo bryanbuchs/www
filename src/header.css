@@ -18,6 +18,10 @@ header {
     a {
       text-decoration: none;
     }
+
+    span {
+      margin-left: -0.3ch;
+    }
   }
 
   p {
