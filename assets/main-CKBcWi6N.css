@@ -366,12 +366,12 @@ More information available at: https://www.reasonable.work/colors
   hanging-punctuation: first last;
   text-wrap: pretty;
 }:root {
-  --background: rgb(226, 224, 217);
-  --body: rgb(68, 64, 54);
+  --background: rgb(215, 210, 203);
+  --body: rgb(64, 63, 72);
   --body-light: oklch(from var(--body) calc(l + 0.1) c h);
-  --body-dark: oklch(from var(--body) calc(l - 0.2) c h);
-  --link: rgb(45, 50, 80);
-  --link-visited: oklch(from var(--link) calc(l - 0.2) c h);
+  --body-dark: rgb(64, 63, 72);
+  --link: rgb(24, 41, 60);
+  --link-visited: oklch(from var(--link) calc(l - 0.1) c h);
   --link-hover: oklch(from var(--link) calc(l + 0.1) c h);
   --marker: var(--body-light);
 }
@@ -396,7 +396,7 @@ html {
   font-feature-settings: "kern";
   font-kerning: normal;
   font-size: clamp(1.25rem, 1.0185rem + 0.7407vw, 1.5rem);
-  color: rgb(68, 64, 54);
+  color: rgb(64, 63, 72);
   color: var(--body);
 }
 
@@ -404,7 +404,7 @@ body {
   font-family: 'Alegreya Variable', serif;
   line-height: 1.5;
   padding: 1rem;
-  background-color: rgb(226, 224, 217);
+  background-color: rgb(215, 210, 203);
   background-color: var(--background);
 }
 
@@ -420,7 +420,7 @@ main {
 }
 
 :where(li)::marker {
-  color: rgb(95, 91, 81);
+  color: rgb(91, 90, 100);
   color: var(--marker);
 }
 
@@ -439,18 +439,18 @@ strong {
 }
 
 a {
-  color: rgb(45, 50, 80);
+  color: rgb(24, 41, 60);
   color: var(--link);
 }
 
 a:visited {
-  color: rgb(4, 4, 27);
+  color: rgb(3, 17, 34);
   color: var(--link-visited);
 }
 
 a:hover,
 a:focus-visible {
-  color: rgb(71, 77, 109);
+  color: rgb(49, 67, 87);
   color: var(--link-hover);
 }
 
@@ -466,7 +466,7 @@ ul {
 }
 
 h2 {
-  font-size: var(--font-size-3);
+  font-size: 1.25rem;
   line-height: 1;
   font-weight: 500;
   margin-top: 0;
@@ -486,19 +486,38 @@ h2 {
 }
 
 .is-stuck {
-  background-color: rgb(226, 224, 217);
+  background-color: rgb(215, 210, 203);
   background-color: var(--background);
   box-shadow: 0px 25px 20px -20px rgba(33, 33, 33, 0.33);
 }
 
 h3 {
   font-weight: 500;
-  font-size: var(--font-size-2);
+  font-size: 1.1rem;
 }
 
 h3 + :not(.description) {
   margin-top: 0.5rem;
 }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.tags li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.7rem;
+    padding: 0.25em 0.5em;
+    background-color: rgb(91, 90, 100);
+    background-color: var(--marker);
+    color: #fff;
+  }
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -516,8 +535,13 @@ h3 + :not(.description) {
   text-wrap: balance;
 }
 
-.text-larger {
+.text-large {
   font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.text-medium {
+  font-size: 1.25rem;
   line-height: 1.4;
 }
 
@@ -531,20 +555,25 @@ h3 + :not(.description) {
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
-.container {
+
+.float-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;;
+}.container {
   --gap: 2rem;
-  --primary: min(var(--size-content-3), 100% - var(--gap) * 2);
+  --primary: min(65ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 3rem);
   --feature: minmax(0, 3rem);
   --full: minmax(var(--gap), 1fr);
-
 
   display: grid;
   grid-template-columns:
     [full-start] minmax(2rem, 1fr)
     [feature-start] minmax(0, 3rem)
     [popout-start] minmax(0, 3rem)
-    [primary-start] var(--primary) [primary-end]
+    [primary-start] min(65ch, 100% - 2rem * 2) [primary-end]
     minmax(0, 3rem) [popout-end]
     minmax(0, 3rem) [feature-end]
     minmax(2rem, 1fr) [full-end];
@@ -587,7 +616,7 @@ h3 + :not(.description) {
   grid-column: feature;
 }
 header {
-  grid-column: popout;
+  grid-column: primary;
 
   border-bottom: 1px solid var(--body-light);
   padding-bottom: 1rem;
@@ -597,7 +626,6 @@ header {
   text-wrap: balance;
 }
 header h1 {
-
     font-weight: 400;
     font-family: 'Covered By Your Grace', cursive;
     font-size: var(--font-size-8);
@@ -605,6 +633,13 @@ header h1 {
     line-height: 1;
     margin-bottom: 1rem;
   }
+header h1 a {
+      color: inherit;
+      -webkit-text-decoration: underline;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--body-light);
+    }
 header p {
     font-size: var(--font-size-3);
     margin-bottom: 0.5rem;
@@ -618,7 +653,7 @@ header p.tagline {
     color: var(--body-light);
   }
 footer {
-  grid-column: popout;
+  grid-column: primary;
 
   margin-top: 1rem;
   border-top: 1px solid var(--body-light);
@@ -646,67 +681,43 @@ footer dd {
     text-align: left;
   }
 .screenshots {
-  grid-column: popout;
-
   margin-top: 1rem;
+  margin-bottom: 1rem;
   display: grid;
-  grid-column-gap: 1rem;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  grid-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   grid-row-gap: 2rem;
   row-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-items: center;
 }
 
+.screenshots:not(.popout) {
+    grid-column: feature;
+  }
+
 figure {
   width: 100%;
-  max-width: 400px;
+  max-width: 520px;
   margin: 0;
   padding: 0;
   position: relative;
 }
 
-figure span[class] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-
-    font-family: sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 1;
-    display: inline-block;
-    padding: 5px;
-
-    margin: 3px;
-    border-radius: 3px;
-    box-shadow: var(--shadow-2);
-
-    background: #000;
-    color: #fff;
-  }
-
-figure span.drupal[class] {
-      background-color: #0071c5;
-    }
-
-figure span.vue[class] {
-      background-color: #565d47;
-    }
-
-figure span.vanilla[class] {
-      background-color: #343434;
-    }
-
 figure img {
+    aspect-ratio: 400 / 235;
+    -o-object-position: top;
+       object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
+
     display: block;
     width: 100%;
     position: relative;
     z-index: 1;
     box-shadow: var(--shadow-4);
+    outline: 1px solid var(--body-light);
   }
 
 figure figcaption {
@@ -715,17 +726,10 @@ figure figcaption {
     margin-top: var(--size-2);
     font-size: var(--font-size-0);
     line-height: 1.4;
+    text-align: center;
   }
 
-figure.cropped img {
-    aspect-ratio: 400 / 235;
-    -o-object-position: top;
-       object-position: top;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
-figure.cropped a:after {
+figure figcaption a:after {
     content: '';
     display: block;
     position: absolute;
@@ -734,8 +738,7 @@ figure.cropped a:after {
     top: 0;
     width: 100%;
     aspect-ratio: 400 / 235;
-  }
-@media print {
+  }@media print {
   body {
     font-size: 18px;
     margin: 0;
