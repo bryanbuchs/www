@@ -84,3 +84,8 @@ figure.cropped {
     aspect-ratio: 400 / 235;
   }
 }
+
+.screenshots figcaption {
+  font-size: 1.1rem;
+  font-weight: 500;
+}

@@ -1,5 +1,5 @@
 footer {
-  grid-column: popout;
+  grid-column: primary;
 
   margin-top: 1rem;
   border-top: 1px solid var(--body-light);

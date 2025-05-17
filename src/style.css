@@ -1,10 +1,10 @@
 :root {
   --background: oklch(from #e2e0d9 l c h);
-  --body: oklch(from #444036 l c h);
+  --body: oklch(from #403f48 l c h);
   --body-light: oklch(from var(--body) calc(l + 0.1) c h);
-  --body-dark: oklch(from var(--body) calc(l - 0.2) c h);
-  --link: oklch(from #2d3250 l c h);
-  --link-visited: oklch(from var(--link) calc(l - 0.2) c h);
+  --body-dark: oklch(from #403f48 l c h);
+  --link: oklch(from #314357 calc(l - 0.1) c h);
+  --link-visited: oklch(from var(--link) calc(l - 0.1) c h);
   --link-hover: oklch(from var(--link) calc(l + 0.1) c h);
   --marker: var(--body-light);
 }
@@ -90,7 +90,7 @@ ul {
 }
 
 h2 {
-  font-size: var(--font-size-3);
+  font-size: 1.25rem;
   line-height: 1;
   font-weight: 500;
   margin-top: 0;
@@ -114,7 +114,7 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-size: var(--font-size-2);
+  font-size: 1.1rem;
 }
 
 h3 + :not(.description) {
