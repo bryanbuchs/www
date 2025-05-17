@@ -24,7 +24,7 @@ for img in ./src/images/*.png; do
     -filter Mitchell \
     -resize 520x \
     -unsharp 0.25x0.25+8+0.065 \
-    -quality 90 \
+    -quality 100 \
     "./images/thumbnails/${name}.webp"
   echo "- ${name}"
 done
