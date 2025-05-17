@@ -333,6 +333,9 @@ header h1 a {
       -webkit-text-decoration: none;
       text-decoration: none;
     }
+header h1 span {
+      margin-left: -0.3ch;
+    }
 header p {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
