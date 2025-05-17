@@ -32,9 +32,8 @@ figure {
   }
 
   figcaption {
-    padding-inline: var(--size-1);
-    margin-top: var(--size-2);
-    font-size: var(--font-size-0);
+    margin-top: 0.85rem;
+    font-size: 0.85rem;
     line-height: 1.4;
     text-align: center;
   }

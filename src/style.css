@@ -22,19 +22,15 @@
   }
 }
 
-html {
+html, body {
   text-decoration-skip-ink: auto;
   font-optical-sizing: auto;
   font-kerning: normal;
-  font-size: clamp(1.25rem, 1.0185rem + 0.7407vw, 1.5rem);
+  font-size: clamp(1.125rem, 1.0598rem + 0.3261vw, 1.3125rem);
   color: var(--body);
-}
-
-body {
-  font-family: 'Alegreya Variable', serif;
-  line-height: 1.5;
-  padding: 1rem;
   background-color: var(--background);
+    font-family: 'Alegreya Variable', serif;
+  line-height: 1.5;
 }
 
 main {
@@ -96,20 +92,6 @@ h2 {
   margin-top: 0;
   padding-block: 0.5rem;
   margin-bottom: 0;
-}
-
-.is-sticky {
-  position: sticky;
-  z-index: 3;
-  top: -1px;
-  margin-left: -3px;
-  margin-right: -3px;
-  padding-inline: 3px;
-}
-
-.is-stuck {
-  background-color: var(--background);
-  box-shadow: 0px 25px 20px -20px rgba(33, 33, 33, 0.33);
 }
 
 h3 {
