@@ -1,5 +1,5 @@
 :root {
-  --background: oklch(from #e2e0d9 l c h);
+  --background: oklch(from #d7d2cb l c h);
   --body: oklch(from #403f48 l c h);
   --body-light: oklch(from var(--body) calc(l + 0.1) c h);
   --body-dark: oklch(from #403f48 l c h);
@@ -119,4 +119,22 @@ h3 {
 
 h3 + :not(.description) {
   margin-top: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.7rem;
+    padding: 0.25em 0.5em;
+    background-color: var(--marker);
+    color: #fff;
+  }
 }

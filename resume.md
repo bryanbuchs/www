@@ -4,9 +4,9 @@ title: Bryan Buchs - Senior Web Developer & Accessibility Specialist
 description: Experienced front-end developer specializing in web accessibility and responsive design.
 ---
 
-## Professional Summary
 
-Seasoned Web Developer with nearly 30 years of experience creating responsive, performant, and user-friendly websites and web applications. Expert in HTML, CSS, JavaScript, and Drupal, strongly focusing on web accessibility standards (WCAG).
+
+Seasoned Web Developer with nearly 30 years of experience creating responsive, performant, and user-friendly websites and web applications. Expert in HTML, CSS, JavaScript, and Drupal, strongly focusing on web accessibility standards (WCAG).{.popout .text-medium}
 
 ## Technical Skills
 

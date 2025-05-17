@@ -1,10 +1,9 @@
 .container {
   --gap: 2rem;
-  --primary: min(var(--size-content-3), 100% - var(--gap) * 2);
+  --primary: min(65ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 3rem);
   --feature: minmax(0, 3rem);
   --full: minmax(var(--gap), 1fr);
-
 
   display: grid;
   grid-template-columns:

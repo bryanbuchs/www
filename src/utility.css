@@ -35,3 +35,9 @@
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
+
+.float-center {
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 1rem;;
+}

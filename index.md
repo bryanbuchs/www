@@ -4,7 +4,7 @@ title: Bryan Buchs - Senior Web Developer & Accessibility Specialist
 description: Experienced front-end developer specializing in web accessibility and responsive design.
 ---
 
-Hi there! I'm Bryan Buchs, a web developer with nearly three decades of experience crafting accessible, responsive, and user-friendly digital experiences.{.popout .text-larger .text-center}
+Hi there! I'm Bryan Buchs, a web developer with nearly three decades of experience crafting accessible, responsive, and user-friendly digital experiences.{.popout .text-large .text-center}
 
 I've been building websites since, well, pretty much since there's been an internet. I started my journey in the mid-90s when I discovered "View Source" in Netscape Navigator, and I was instantly hooked. Throughout my career, I've transformed alongside the web itself. While HTML remains the faithful constant in my toolkit, I've continuously embraced new technologies—from the early days of table-based layouts to today's modern frameworks like Vue.js.
 
@@ -16,4 +16,46 @@ When I'm not crafting clean code or optimizing performance, you'll find me explo
 
 Here are some of my favorite projects that I've worked on as developer at [kapow, inc](https://kapowinc.com). Click on the images to view larger versions and details.
 
-{% include "screenshots.njk" %}
+<div class="screenshots popout">
+
+  <figure>
+    <img
+      src="/images/thumbnails/stanford-online.webp"
+      alt="screenshot of Stanford Online website"
+      loading="lazy"/>
+    <figcaption>
+      <a href="/projects/stanford-online/">Stanford Online</a>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/images/thumbnails/stanford-seet.webp"
+      alt="screenshot of Stanford Enterprise Education for Transformation website"
+      loading="lazy"/>
+    <figcaption>
+      <a href="/projects/stanford-seet/">Stanford Enterprise Education for Transformation</a>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/images/thumbnails/hhmi-biomolecules.webp"
+      alt="screenshot of Biomolecules on the Menu website"
+      loading="lazy"/>
+    <figcaption>
+      <a href="/projects/hhmi-biomolecules/">Biomolecules on the Menu</a>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img
+      src="/images/thumbnails/hhmi-video-2.webp"
+      alt="screenshot of HHMI BioInteractive Video Builder website"
+      loading="lazy"/>
+    <figcaption>
+      <a href="/projects/hhmi-video/">Interactive Video Builder</a>
+    </figcaption>
+  </figure>
+
+</div>

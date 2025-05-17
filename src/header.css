@@ -1,5 +1,5 @@
 header {
-  grid-column: popout;
+  grid-column: primary;
 
   border-bottom: 1px solid var(--body-light);
   padding-bottom: 1rem;
@@ -9,13 +9,19 @@ header {
   text-wrap: balance;
 
   h1 {
-
     font-weight: 400;
     font-family: 'Covered By Your Grace', cursive;
     font-size: var(--font-size-8);
     color: var(--body-dark);
     line-height: 1;
     margin-bottom: 1rem;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--body-light);
+    }
   }
 
   p {
