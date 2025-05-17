@@ -1,10 +1,12 @@
-.container {
-  --gap: 2rem;
-  --primary: min(65ch, 100% - var(--gap) * 2);
+:root {
+  --gap: 1rem;
+  --primary: min(60ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 3rem);
   --feature: minmax(0, 3rem);
   --full: minmax(var(--gap), 1fr);
+}
 
+.container {
   display: grid;
   grid-template-columns:
     [full-start] var(--full)
@@ -14,6 +16,12 @@
     var(--popout) [popout-end]
     var(--feature) [feature-end]
     var(--full) [full-end];
+}
+
+body {
+  margin: 0;
+  padding-inline: 0;
+  padding-block: var(--gap);
 }
 
 :where(.container) > *,
@@ -31,16 +39,4 @@
 
 :where(.full) {
   grid-column: full;
-}
-
-:where(header:not([class])) {
-  grid-column: popout;
-}
-
-:where(main:not([class])) {
-  grid-column: full;
-}
-
-:where(footer:not([class])) {
-  grid-column: feature;
 }
