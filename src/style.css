@@ -3,41 +3,44 @@
   --body: oklch(from #403f48 l c h);
   --body-light: oklch(from var(--body) calc(l + 0.1) c h);
   --body-dark: oklch(from #403f48 l c h);
-  --link: oklch(from #314357 calc(l - 0.1) c h);
-  --link-visited: oklch(from var(--link) calc(l - 0.1) c h);
-  --link-hover: oklch(from var(--link) calc(l + 0.1) c h);
+  --link: #374259;
+  --link-hover: oklch(from var(--link) calc(l - 0.1) c h);
   --marker: var(--body-light);
+  --tag: #45526c;
+  --tag-text: #faf5e4;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--color-powder-6);
-    --body: #efefef;
-    --body-light: #f0ebe5;
-    --body-dark: #ffffff;
-    --link: var(--color-powder-2);
-    --link-visited: var(--color-powder-2);
-    --link-hover: var(--color-powder-1);
-    --marker: var(--color-powder-3);
+    --background: oklch(from #444036 l c h);
+    --body: oklch(from #f9f9f9 l c h);
+    --body-light: oklch(from #ffffff l c h);
+    --body-dark: oklch(from #a6a99e l c h);
+    --link: oklch(from #ffc85c l c h);
+    --marker: var(--body-dark);
+    --tag: oklch(from var(--background) calc(l - 0.1) c h);
+    --tag-text: var(--body-light);
   }
 }
 
-html, body {
+html,
+body {
   text-decoration-skip-ink: auto;
   font-optical-sizing: auto;
   font-kerning: normal;
   font-size: clamp(1.125rem, 1.0598rem + 0.3261vw, 1.3125rem);
   color: var(--body);
   background-color: var(--background);
-    font-family: 'Alegreya Variable', serif;
+  font-family: 'Alegreya Variable', serif;
   line-height: 1.5;
 }
 
 main {
+  grid-column: full;
 }
 
 :where(h2, h3, h4) {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 :where(li) {
@@ -58,26 +61,14 @@ ul {
   margin-bottom: 1rem;
 }
 
-strong {
-  font-weight: 500;
-}
-
-a {
+:where(a) {
   color: var(--link);
-}
+  text-decoration-thickness: 1px;
 
-a:visited {
-  color: var(--link-visited);
-}
-
-a:hover,
-a:focus-visible {
-  color: var(--link-hover);
-}
-
-:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
+  &:hover,
+  &:focus {
+    color: var(--link-hover);
+  }
 }
 
 ul {
@@ -114,9 +105,9 @@ h3 + :not(.description) {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-size: 0.7rem;
-    padding: 0.25em 0.5em;
-    background-color: var(--marker);
-    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.25em 0.75em;
+    background-color: var(--tag);
+    color: var(--tag-text);
   }
 }

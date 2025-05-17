@@ -26,7 +26,6 @@
     "@fontsource/covered-by-your-grace": "^5.2.5",
     "@vovayatsyuk/photoswipe-object-position": "^1.0.0",
     "open-props": "^1.7.15",
-    "photoswipe": "^5.4.4",
-    "reasonable-colors": "^0.4.0"
+    "photoswipe": "^5.4.4"
   }
 }

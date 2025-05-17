@@ -24,20 +24,3 @@
   font-size: 1.25rem;
   line-height: 1.4;
 }
-
-.float-left {
-  float: left;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
-.float-right {
-  float: right;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-}
-
-.float-center {
-  display: block;
-  margin-inline: auto;
-  margin-bottom: 1rem;;
-}
