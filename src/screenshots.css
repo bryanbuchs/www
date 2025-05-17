@@ -1,17 +1,25 @@
-.screenshots {
+:where(.screenshots) {
+  grid-column: popout;
   margin-block: 1rem;
   display: grid;
   column-gap: 2rem;
   row-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-items: center;
+}
 
-  &:not(.popout) {
-    grid-column: feature;
+@media (720px <= width <= 1450px) {
+  .screenshots.feature {
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    justify-items: end;
+
+    figure:nth-child(even) {
+      justify-self: start;
+    }
   }
 }
 
-figure {
+:where(figure) {
   width: 100%;
   max-width: 520px;
   margin: 0;

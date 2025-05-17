@@ -1,8 +1,8 @@
 :root {
   --gap: 1rem;
-  --primary: min(60ch, 100% - var(--gap) * 2);
-  --popout: minmax(0, 3rem);
-  --feature: minmax(0, 3rem);
+  --primary: min(55ch, 100% - var(--gap) * 2);
+  --popout: minmax(0, 5rem);
+  --feature: minmax(0, 10rem);
   --full: minmax(var(--gap), 1fr);
 }
 
@@ -25,18 +25,18 @@ body {
 }
 
 :where(.container) > *,
-:where(.primary) {
+:is(.primary) {
   grid-column: primary;
 }
 
-:where(.popout) {
+:is(.popout) {
   grid-column: popout;
 }
 
-:where(.feature) {
+:is(.feature) {
   grid-column: feature;
 }
 
-:where(.full) {
+:is(.full) {
   grid-column: full;
 }
