@@ -25,7 +25,7 @@ I had the opportunity to build the frontend for Stanford Online, the university'
   </figure>
 
   <figure>
-    <a href="/images/screenshots/stanford-online-2.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1750">
+    <a href="/images/screenshots/stanford-online-2.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="2229">
       <img
         src="/images/thumbnails/stanford-online-2.webp"
         alt="screenshot of Course/Program search page"
@@ -43,7 +43,7 @@ The most challenging aspect was integrating with Stanford's massive course datab
 <div class="screenshots">
 
   <figure>
-    <a href="/images/screenshots/stanford-online-3.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="6608">
+    <a href="/images/screenshots/stanford-online-3.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="3831">
       <img
         src="/images/thumbnails/stanford-online-3.webp"
         alt="screenshot of Program detail page"
@@ -51,6 +51,18 @@ The most challenging aspect was integrating with Stanford's massive course datab
     </a>
     <figcaption>
       Program Details
+    </figcaption>
+  </figure>
+
+  <figure>
+    <a href="/images/screenshots/stanford-online-4.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="5148">
+      <img
+        src="/images/thumbnails/stanford-online-4.webp"
+        alt="screenshot of Course detail page"
+        loading="lazy"/>
+    </a>
+    <figcaption>
+      Course Details
     </figcaption>
   </figure>
 

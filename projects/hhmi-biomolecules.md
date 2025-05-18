@@ -13,7 +13,7 @@ I helped develop "Biomolecules on the Menu", an immersive educational Vue single
 <div class="screenshots">
 
   <figure>
-    <a href="/images/screenshots/hhmi-biomolecules.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1196">
+    <a href="/images/screenshots/hhmi-biomolecules.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1218">
       <img
         src="/images/thumbnails/hhmi-biomolecules.webp"
         alt="screenshot of 'Biomolecules on the Menu' website"
@@ -24,8 +24,26 @@ I helped develop "Biomolecules on the Menu", an immersive educational Vue single
     </figcaption>
   </figure>
 
+</div>
+
+I built the entire experience with Vue.js, creating rich SVG-based visualizations animated with the GSAP library to bring biological processes to life. These smooth, responsive animations help students visualize abstract concepts like nutrient absorption and ATP production. By optimizing performance and maintaining accessibility standards, I delivered an interactive learning tool that makes complex science approachable and engaging for students across different devices commonly found in classroom settings.
+
+<div class="screenshots">
+
   <figure>
-    <a href="/images/screenshots/hhmi-biomolecules-3.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1581">
+    <a href="/images/screenshots/hhmi-biomolecules-2.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1218">
+      <img
+        src="/images/thumbnails/hhmi-biomolecules-2.webp"
+        alt="metabolic processes diagram"
+        loading="lazy"/>
+    </a>
+    <figcaption>
+      Interactive clickable diagram of metabolic processes
+    </figcaption>
+  </figure>
+
+  <figure>
+    <a href="/images/screenshots/hhmi-biomolecules-3.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1529">
       <img
         src="/images/thumbnails/hhmi-biomolecules-3.webp"
         alt="metabolic processes diagram"
@@ -37,8 +55,6 @@ I helped develop "Biomolecules on the Menu", an immersive educational Vue single
   </figure>
 
 </div>
-
-I built the entire experience with Vue.js, creating rich SVG-based visualizations animated with the GSAP library to bring biological processes to life. These smooth, responsive animations help students visualize abstract concepts like nutrient absorption and ATP production. By optimizing performance and maintaining accessibility standards, I delivered an interactive learning tool that makes complex science approachable and engaging for students across different devices commonly found in classroom settings.
 
 ### Tech
 
