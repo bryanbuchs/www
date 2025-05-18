@@ -93,7 +93,16 @@ h3 + :not(.description) {
   margin-top: 0.5rem;
 }
 
-.tags {
+/* project pages */
+
+p > a:first-child:last-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+ul.tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -108,5 +117,6 @@ h3 + :not(.description) {
     padding: 0.25em 0.75em;
     background-color: var(--tag);
     color: var(--tag-text);
+    border-radius: 0.125rem;
   }
 }
