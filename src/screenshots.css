@@ -46,6 +46,13 @@
     text-align: center;
   }
 
+  figcaption a {
+    &:hover,
+    &:focus {
+      transform: none;
+    }
+  }
+
   figcaption a:after {
     content: '';
     display: block;
