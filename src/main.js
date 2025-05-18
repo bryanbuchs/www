@@ -9,8 +9,8 @@ import './utility.css'
 import './layout.css'
 import './header.css'
 import './footer.css'
-import './screenshots.css'
 
 import './print.css'
 
-import './lightbox.js'
+import './screenshots.js'
+import './screenshots.css'

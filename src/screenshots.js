@@ -4,7 +4,8 @@ import ObjectPosition from '@vovayatsyuk/photoswipe-object-position'
 import 'photoswipe/style.css'
 
 const lightbox = new PhotoSwipeLightbox({
-  gallery: 'figure a[data-pswp-width]',
+  gallery: '.screenshots',
+  children: 'a[data-pswp-width]',
   showAnimationDuration: 400,
   hideAnimationDuration: 250,
   easing: 'cubic-bezier(0.77, 0, 0.175, 1)',
