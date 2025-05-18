@@ -13,7 +13,7 @@ I had the opportunity to build the frontend for Stanford Online, the university'
 <div class="screenshots">
 
   <figure>
-    <a href="/images/screenshots/stanford-online.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="4689">
+    <a href="/images/screenshots/stanford-online.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="4262">
       <img
         src="/images/thumbnails/stanford-online.webp"
         alt="screenshot of Stanford Online website"
