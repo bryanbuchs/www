@@ -5768,13 +5768,17 @@ class ObjectPosition {
   }
 }
 const lightbox = new PhotoSwipeLightbox({
-  gallery: "figure a[data-pswp-width]",
+  gallery: "a[data-pswp-width]",
+  // children: 'a[data-pswp-width]',
+  // indexIndicatorSep: ' of ',
   showAnimationDuration: 400,
   hideAnimationDuration: 250,
   easing: "cubic-bezier(0.77, 0, 0.175, 1)",
-  initialZoomLevel: "fill",
-  secondaryZoomLevel: 1.5,
-  padding: { top: 20, bottom: 20, left: 20, right: 20 },
+  initialZoomLevel: (zoomLevelObject) => {
+    return zoomLevelObject.panAreaSize.x / zoomLevelObject.elementSize.x;
+  },
+  secondaryZoomLevel: "fill",
+  padding: { top: 60, bottom: 5, left: 5, right: 5 },
   pswpModule: PhotoSwipe
 });
 new ObjectPosition(lightbox);
