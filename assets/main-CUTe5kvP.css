@@ -227,11 +227,13 @@ h3 {
 
 /* project pages */
 
-p > a:first-child:last-child {
+a.project-link {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 ul.tags {
@@ -929,6 +931,14 @@ div.pswp__img--placeholder,
     line-height: 1.4;
     text-align: center;
   }
+
+:where(figure) figcaption a:hover {
+      transform: none;
+    }
+
+:where(figure) figcaption a:focus {
+      transform: none;
+    }
 
 :where(figure) figcaption a:after {
     content: '';
