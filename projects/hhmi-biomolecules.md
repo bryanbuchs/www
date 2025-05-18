@@ -6,7 +6,7 @@ description: An immersive educational Vue single-page application that takes stu
 
 ## Biomolecules on the Menu
 
-https://media.hhmi.org/biointeractive/click/biomolecules/{target='_blank'}
+https://media.hhmi.org/biointeractive/click/biomolecules/{target='_blank' .project-link}
 
 I helped develop "Biomolecules on the Menu", an immersive educational Vue single-page application that takes students on a journey through the human digestive system. This interactive experience explains the complex connections between food, digestion, metabolism, and cellular respiration in an engaging, visual way. Working with HHMI BioInteractive's science education team, I transformed complex biological concepts into an intuitive digital experience that progressively zooms in from whole-body systems to cellular processes.
 

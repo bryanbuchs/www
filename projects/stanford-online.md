@@ -6,7 +6,7 @@ description: TODO
 
 ## Stanford Online
 
-https://online.stanford.edu{target='_blank'}
+https://online.stanford.edu{target='_blank' .project-link}
 
 I had the opportunity to build the frontend for Stanford Online, the university's hub for continuing and professional education. This platform connects learners worldwide with Stanford's part-time degrees, professional certificates, and free content developed by their faculty. My work spanned the entire frontend development process from architecture to implementation. What made this project especially rewarding was developing a component library in Storybook that gave content editors incredible flexibility to build and customize pages without needing a developer.
 

@@ -6,7 +6,7 @@ description: TODO
 
 ## Stanford Enterprise Education for Transformation
 
-https://enterpriseeducation.stanford.edu{target='_blank'}
+https://enterpriseeducation.stanford.edu{target='_blank' .project-link}
 
 For the Stanford Enterprise Education for Transformation website, I took on the complete development responsibility, handling both frontend and backend work for this Drupal-powered marketing site. Working from designer comps, I transformed static designs into a fully responsive, accessible website that showcases Stanford's Enterprise Education programs at the intersection of strategy, technology, and people. This project gave me the opportunity to refine my component-driven development approach, leaning heavily on Storybook to create a robust library of reusable elements.
 

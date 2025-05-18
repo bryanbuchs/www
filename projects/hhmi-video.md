@@ -6,7 +6,7 @@ description: TODO
 
 ## HHMI BioInteractive Video Builder Tool
 
-https://interactive-video-tool.biointeractive.org{target='_blank'}
+https://interactive-video-tool.biointeractive.org{target='_blank' .project-link}
 
 I helped develop the frontend for BioInteractive's Interactive Video Builder, an educational tool that transforms science videos into engaging learning experiences. The platform allows educators to enhance HHMI's video library with pause points, questions, and text annotations at specific timestamps. I created an intuitive interface where teachers can easily add multiple-choice questions, true/false prompts, or free-text responses that appear at precise moments throughout the videos.
 
