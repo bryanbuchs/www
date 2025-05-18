@@ -3,6 +3,8 @@
   --body: oklch(from #403f48 l c h);
   --body-light: oklch(from var(--body) calc(l + 0.1) c h);
   --body-dark: oklch(from #403f48 l c h);
+  --body-highlight: oklch(from #6d3939 l c h);
+  --title: oklch(from #8e7c60 calc(l - 0.2) c h);
   --link: #374259;
   --link-hover: oklch(from var(--link) calc(l - 0.1) c h);
   --marker: var(--body-light);
@@ -13,10 +15,14 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: oklch(from #444036 l c h);
-    --body: oklch(from #f9f9f9 l c h);
+    --body: oklch(from #ffffff l c h);
     --body-light: oklch(from #ffffff l c h);
-    --body-dark: oklch(from #a6a99e l c h);
-    --link: oklch(from #ffc85c l c h);
+    --body-dark: oklch(from #ffffff calc(l + 0.05) l c h);
+
+    --body-highlight: var(--body-dark);
+    --title: #d6ccc2;
+
+    --link: oklch(from #e7d7ca l c h);
     --marker: var(--body-dark);
     --tag: oklch(from var(--background) calc(l - 0.1) c h);
     --tag-text: var(--body-light);
@@ -62,12 +68,17 @@ ul {
 }
 
 :where(a) {
+  display: inline-block;
   color: var(--link);
   text-decoration-thickness: 1px;
+  transition: all 0.1s var(--ease-in-out-4);
+  transform-origin: bottom;
 
   &:hover,
   &:focus {
     color: var(--link-hover);
+    text-decoration-thickness: 2px;
+    transform: translateY(-2px);
   }
 }
 
@@ -78,19 +89,17 @@ ul {
 
 h2 {
   font-size: 1.33rem;
-  line-height: 1;
+  line-height: 1.1;
   font-weight: 500;
   margin-block: 0.75rem;
-  color: var(--body-light);
+  color: var(--body-highlight);
 }
 
 h3 {
   font-weight: 500;
   font-size: 1.2rem;
-}
-
-h3 + :not(.description) {
-  margin-top: 0.5rem;
+  color: var(--body-highlight);
+  margin-block: 0.5rem;
 }
 
 /* project pages */

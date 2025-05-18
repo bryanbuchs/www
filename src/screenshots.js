@@ -15,7 +15,7 @@ const lightbox = new PhotoSwipeLightbox({
     return zoomLevelObject.panAreaSize.x / zoomLevelObject.elementSize.x
   },
   secondaryZoomLevel: 'fill',
-  padding: { top: 60, bottom: 0, left: 0, right: 0 },
+  padding: { top: 60, bottom: 5, left: 5, right: 5},
   pswpModule: PhotoSwipe
 })
 

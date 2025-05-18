@@ -16,7 +16,20 @@ header {
     margin-bottom: 1rem;
 
     a {
-      text-decoration: none;
+      display: inline-block;
+      color: var(--title);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-decoration-style: solid;
+      text-underline-offset: 1px;
+      text-decoration-color: currentColor;
+
+      scale: 1;
+
+      &:hover {
+        text-decoration-thickness: 2px;
+        scale: 1.02;
+      }
     }
 
     span {
@@ -29,6 +42,7 @@ header {
     margin-bottom: 0.5rem;
     line-height: 1.2;
     font-weight: 500;
+    color: var(--body-dark);
   }
 
   p.tagline {
