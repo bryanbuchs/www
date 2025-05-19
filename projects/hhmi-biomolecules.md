@@ -20,7 +20,7 @@ I helped develop "Biomolecules on the Menu", an immersive educational Vue single
         loading="lazy"/>
     </a>
     <figcaption>
-      Animated diagram of digestive system
+      Landing page 
     </figcaption>
   </figure>
 
@@ -34,11 +34,11 @@ I built the entire experience with Vue.js, creating rich SVG-based visualization
     <a href="/images/screenshots/hhmi-biomolecules-2.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1218">
       <img
         src="/images/thumbnails/hhmi-biomolecules-2.webp"
-        alt="metabolic processes diagram"
+        alt="Animated diagram of digestive system"
         loading="lazy"/>
     </a>
     <figcaption>
-      Interactive clickable diagram of metabolic processes
+      Animated diagram of digestive system
     </figcaption>
   </figure>
 
@@ -50,7 +50,7 @@ I built the entire experience with Vue.js, creating rich SVG-based visualization
         loading="lazy"/>
     </a>
     <figcaption>
-      Interactive clickable diagram of metabolic processes
+       Interactive clickable diagram of metabolic processes
     </figcaption>
   </figure>
 
