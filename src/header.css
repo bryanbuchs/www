@@ -11,18 +11,19 @@ header {
   h1 {
     font-weight: 400;
     font-family: 'Covered By Your Grace', cursive;
-    font-size: 3rem;
+    font-size: 3.33rem;
     line-height: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 
     a {
       display: inline-block;
       color: var(--title);
-      text-decoration: underline;
+      text-decoration: none;
+      /* text-decoration: underline;
       text-decoration-thickness: 1px;
       text-decoration-style: solid;
       text-underline-offset: 1px;
-      text-decoration-color: currentColor;
+      text-decoration-color: currentColor; */
 
       &:hover, &:focus {
         color: oklch(from var(--title) calc(l + 0.075) c h);
