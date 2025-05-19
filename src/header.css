@@ -24,11 +24,8 @@ header {
       text-underline-offset: 1px;
       text-decoration-color: currentColor;
 
-      scale: 1;
-
-      &:hover {
-        text-decoration-thickness: 2px;
-        scale: 1.02;
+      &:hover, &:focus {
+        color: oklch(from var(--title) calc(l + 0.075) c h);
       }
     }
 
