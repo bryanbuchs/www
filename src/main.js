@@ -1,3 +1,6 @@
+import "sanitize.css"
+import "sanitize.css/typography.css"
+
 import '@fontsource/covered-by-your-grace'
 import '@fontsource-variable/alegreya'
 
