@@ -4,7 +4,7 @@ title: Bryan Buchs - Senior Web Developer & Accessibility Specialist
 description: Experienced front-end developer specializing in web accessibility and responsive design.
 ---
 
-Hi there! I'm Bryan Buchs, a web developer with nearly three decades of experience crafting accessible, responsive, and user-friendly digital experiences.{.popout .text-large .text-center}
+Hi there! I'm Bryan Buchs, a web developer with nearly three decades of experience crafting accessible, responsive, and user-friendly digital experiences.{.popout .text-huge .text-center}
 
 I've been building websites since, well, pretty much since there's been an internet. I started my journey in the mid-90s when I discovered "View Source" in Netscape Navigator, and I was instantly hooked. Throughout my career, I've transformed alongside the web itself. While HTML remains the faithful constant in my toolkit, I've continuously embraced new technologies—from the early days of table-based layouts to today's modern frameworks like Vue.js.
 

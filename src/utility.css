@@ -20,6 +20,11 @@
   line-height: 1.33;
 }
 
+.text-huge {
+  font-size: 2rem;
+  line-height: 1.33;
+}
+
 .text-medium {
   font-size: 1.3rem;
   line-height: 1.4;
