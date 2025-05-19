@@ -71,8 +71,9 @@ ul {
   display: inline-block;
   color: var(--link);
   text-decoration-thickness: 1px;
-  transition: all 0.1s var(--ease-in-out-4);
+  transition: transform 0.1s var(--ease-in-out-2), text-decoration-thickness 0.1s var(--ease-in-out-2);
   transform-origin: bottom;
+  will-change: transform, text-decoration-thickness;
 
   &:hover,
   &:focus {
@@ -110,6 +111,23 @@ a.project-link {
   text-overflow: ellipsis;
   display: block;
   max-width: max-content;
+  line-height: 1.1;
+  text-decoration: underline;
+  padding-bottom: 2px;
+  font-size: 1rem;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-left: 0.33em;
+    background-image: svg-load(
+      'solid/arrow-up-right-from-square.svg',
+      fill=#374259
+    );
+    transform: translateY(-2px);
+  }
 }
 
 ul.tags {
