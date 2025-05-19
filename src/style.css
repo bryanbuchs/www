@@ -1,9 +1,9 @@
 :root {
   --background: oklch(from #d7d2cb l c h);
   --body: oklch(from #403f48 l c h);
-  --body-light: oklch(from var(--body) calc(l + 0.1) c h);
+  --body-light: oklch(from #686762 l c h);
   --body-dark: oklch(from #403f48 l c h);
-  --body-highlight: oklch(from #6d3939 l c h);
+  --body-highlight: oklch(from #6f4e37 calc(l - 0.2) c h);
   --title: oklch(from #8e7c60 calc(l - 0.2) c h);
   --link: #374259;
   --link-hover: oklch(from var(--link) calc(l - 0.1) c h);
@@ -65,6 +65,7 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 :where(a) {
@@ -94,12 +95,13 @@ h2 {
   font-weight: 500;
   margin-block: 0.75rem;
   color: var(--body-highlight);
+  font-family: 'Alegreya SC', sans-serif;
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.2rem;
-  color: var(--body-highlight);
+  color: var(--body-dark);
   margin-block: 0.5rem;
 }
 
@@ -127,6 +129,10 @@ a.project-link {
       fill=#374259
     );
     transform: translateY(-2px);
+  }
+
+  &:hover {
+    transform: none;
   }
 }
 

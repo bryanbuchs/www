@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@fontsource-variable/alegreya": "^5.2.5",
+    "@fontsource/alegreya-sc": "^5.2.5",
     "@fontsource/covered-by-your-grace": "^5.2.5",
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@vovayatsyuk/photoswipe-object-position": "^1.0.0",
