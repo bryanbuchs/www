@@ -16,7 +16,7 @@ I helped develop "Biomolecules on the Menu", an immersive educational Vue single
     <a href="/images/screenshots/hhmi-biomolecules.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1218">
       <img
         src="/images/thumbnails/hhmi-biomolecules.webp"
-        alt="screenshot of 'Biomolecules on the Menu' website"
+        alt="Screenshot of an educational webpage titled 'Biomolecules on the Menu'. The page features a hamburger logo in the top left corner and a hamburger menu icon in the top right. The main content displays a human body outline with visible circulatory system in red and blue, and a small sandwich illustration to the left. Text overlaid on the body diagram reads: 'Biomolecules on the Menu. You need food to build your cells and fuel your activities. How does the food you eat provide the energy you need?' Below this is an orange button reading 'Take a bite and find out!'. At the bottom of the page is a footer with 'Supporting Information' text and logos for 'hhmi' and 'BioInteractive'."
         loading="lazy"/>
     </a>
     <figcaption>
