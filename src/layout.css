@@ -1,8 +1,8 @@
 :root {
   --gap: 1rem;
-  --primary: min(55ch, 100% - var(--gap) * 2);
-  --popout: minmax(0, 5rem);
-  --feature: minmax(0, 10rem);
+  --primary: min(50ch, 100% - var(--gap) * 2);
+  --popout: minmax(0, 6rem);
+  --feature: minmax(0, 12rem);
   --full: minmax(var(--gap), 1fr);
 }
 

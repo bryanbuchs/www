@@ -8,7 +8,7 @@
   justify-items: center;
 }
 
-@media (720px <= width <= 1450px) {
+@media (720px <= width <= 1451px) {
   .screenshots.feature {
     grid-template-columns: repeat(2, minmax(320px, 1fr));
     justify-items: end;
