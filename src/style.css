@@ -72,15 +72,14 @@ ul {
   display: inline-block;
   color: var(--link);
   text-decoration-thickness: 1px;
-  transition: transform 0.1s var(--ease-in-out-2), text-decoration-thickness 0.1s var(--ease-in-out-2);
+  transition: text-decoration-thickness 0.1s var(--ease-in-out-2);
   transform-origin: bottom;
-  will-change: transform, text-decoration-thickness;
+  will-change: text-decoration-thickness;
 
   &:hover,
   &:focus {
     color: var(--link-hover);
     text-decoration-thickness: 2px;
-    transform: translateY(-2px);
   }
 }
 
