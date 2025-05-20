@@ -1,8 +1,29 @@
 ---
-layout: base.njk
+layout: resume.njk
 title: Bryan Buchs - Senior Web Developer & Accessibility Specialist
 description: Experienced front-end developer specializing in web accessibility and responsive design.
 ---
+
+<dl>
+  <dt>Mail</dt>
+  <dd><a href="mailto:bryan@bryanbuchs.com">bryan@bryanbuchs.com</a></dd>
+
+  <dt>Web</dt>
+  <dd><a href="https://bryanbuchs.com">bryanbuchs.com</a></dd>
+
+  <dt>GitHub</dt>
+  <dd><a href="github.com/bryanbuchs">github.com/bryanbuchs</a></dd>
+
+  <dt>LinkedIn</dt>
+  <dd><a href="https://www.linkedin.com/in/bryan-buchs-314656341" target="_blank">linkedin.com/in/bryan-buchs-314656341</a></dd>
+
+  <dt>Phone</dt>
+  <dd>+1 414.246.7050</dd>
+
+  <dt>Home</dt>
+  <dd>Shorewood, Wisconsin, USA</dd>
+
+</dl>
 
 Seasoned Web Developer with nearly 30 years of experience creating responsive, performant, and user-friendly websites and web applications. Expert in HTML, CSS, JavaScript, and Drupal, strongly focusing on web accessibility standards (WCAG).
 

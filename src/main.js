@@ -15,6 +15,7 @@ import './layout.css'
 import './header.css'
 import './footer.css'
 
+import "./resume.css"
 import './print.css'
 
 import './screenshots.js'
