@@ -71,7 +71,7 @@ Web development for arts & education institutions
 
 - Cultural Institutions: Built accessible websites for Los Angeles Public Library, Autry Museum of the American West, and Skirball Cultural Center
 - PBS/Ken Burns Documentaries: Created web experiences for acclaimed documentaries, including The National Parks, Baseball: The Tenth Inning, Prohibition, The Dustbowl, and The Roosevelts
-- PBS Science & History Documentaries: Developed sites for Your Inner Fish, Seeing In The Dark, The Story of India, The Farthest, and The Story of China
+- PBS Science & History Documentaries: Developed sites for Your Inner Fish, Seeing In The Dark, The Story of India, Marine Explorer, and The Story of China
 - Los Angeles Philharmonic Orchestra & The Hollywood Bowl: Developed public-facing websites
 
 ### Earlier Career
