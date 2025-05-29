@@ -592,13 +592,25 @@ pre {
   --body: rgb(64, 63, 72);
   --body-light: rgb(104, 103, 98);
   --body-dark: rgb(64, 63, 72);
-  --body-highlight: rgb(55, 26, 3);
-  --title: rgb(84, 68, 41);
+  --body-highlight: rgb(137, 40, 0);
+  --title: #000000;
   --link: #374259;
   --link-hover: oklch(from var(--link) calc(l - 0.1) c h);
   --marker: var(--body-light);
   --tag: #45526c;
   --tag-text: #faf5e4;
+}
+
+@supports (color: color(display-p3 0 0 0%)) {
+:root {
+  --body-highlight: rgb(137, 40, 0);
+}
+
+@media (color-gamut: p3) {
+:root {
+  --body-highlight: color(display-p3 0.50674 0.17038 0.02824);
+}
+}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -608,8 +620,8 @@ pre {
     --body-light: rgb(255, 255, 255);
     --body-dark: oklch(from #ffffff calc(l + 0.05) l c h);
 
-    --body-highlight: var(--body-dark);
-    --title: #d6ccc2;
+    --body-highlight: #facfad;
+    --title: #f5ac72;
 
     --link: rgb(231, 215, 202);
     --marker: var(--body-dark);
@@ -640,6 +652,7 @@ main {
 
 :where(h2, h3, h4) {
   font-weight: 500;
+  text-wrap: balance;
 }
 
 :where(li) {
@@ -660,6 +673,7 @@ ul {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  text-wrap: pretty;
 }
 
 :where(a) {
@@ -690,9 +704,9 @@ h2 {
   font-weight: 500;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-  color: rgb(55, 26, 3);
-  color: var(--body-highlight);
-  font-family: 'Alegreya SC', sans-serif;
+  color: rgb(64, 63, 72);
+  color: var(--body-dark);
+  /* font-family: 'Alegreya SC', sans-serif; */
 }
 
 h3 {
@@ -756,6 +770,26 @@ ul.tags li {
     color: var(--tag-text);
     border-radius: 0.125rem;
   }
+
+dl,
+dt,
+dd {
+  margin: 0;
+}
+
+dl {
+  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 0.5rem;
+
+  margin-left: auto;
+
+  margin-right: auto;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -779,8 +813,10 @@ ul.tags li {
 }
 
 .text-huge {
-  font-size: clamp(1.875rem, 1.2159rem + 1.8182vw, 2.625rem);
+  /* @link https://utopia.fyi/type/calculator?c=640,26,1.2,1240,38,1.25,0,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  font-size: clamp(1.625rem, 0.825rem + 2vw, 2.375rem);
   line-height: 1.3;
+  color: var(--body-highlight);
 }
 
 .text-medium {
@@ -790,8 +826,8 @@ ul.tags li {
 :root {
   --gap: 1rem;
   --primary: min(50ch, 100% - var(--gap) * 2);
-  --popout: minmax(0, 6rem);
-  --feature: minmax(0, 12rem);
+  --popout: minmax(0, 10rem);
+  --feature: minmax(0, 8rem);
   --full: minmax(var(--gap), 1fr);
 }
 
@@ -799,11 +835,11 @@ ul.tags li {
   display: grid;
   grid-template-columns:
     [full-start] minmax(1rem, 1fr)
-    [feature-start] minmax(0, 12rem)
-    [popout-start] minmax(0, 6rem)
+    [feature-start] minmax(0, 8rem)
+    [popout-start] minmax(0, 10rem)
     [primary-start] min(50ch, 100% - 1rem * 2) [primary-end]
-    minmax(0, 6rem) [popout-end]
-    minmax(0, 12rem) [feature-end]
+    minmax(0, 10rem) [popout-end]
+    minmax(0, 8rem) [feature-end]
     minmax(1rem, 1fr) [full-end];
   grid-template-columns:
     [full-start] var(--full)
@@ -854,7 +890,7 @@ header {
 header h1 {
     font-weight: 400;
     font-family: 'Covered By Your Grace', cursive;
-    font-size: 3.33rem;
+    font-size: 3.5rem;
     line-height: 1;
     margin-bottom: 0.75rem;
   }
@@ -863,14 +899,13 @@ header h1 a {
       color: var(--title);
       -webkit-text-decoration: none;
       text-decoration: none;
-      /* text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-decoration-style: solid;
-      text-underline-offset: 1px;
-      text-decoration-color: currentColor; */
     }
 header h1 a:hover,header h1 a:focus {
         color: oklch(from var(--title) calc(l + 0.075) c h);
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
       }
 header h1 span {
       margin-left: -0.3ch;
@@ -894,31 +929,12 @@ footer {
   margin-top: 1rem;
   border-top: 1px solid var(--body-light);
   padding-top: 1rem;
+
+
 }
-footer dl,footer dt,footer dd {
-    margin: 0;
-  }
-footer dl {
-    font-size: 0.85rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-
-    margin-left: auto;
-
-    margin-right: auto;
-  }
-footer dt {
-    font-weight: 500;
-    text-align: right;
-  }
-footer dd {
-    text-align: left;
-  }
 
   .resume h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     line-height: 1.1;
     font-weight: 500;
     margin-top: 0.75rem;
@@ -927,40 +943,12 @@ footer dd {
     color: inherit;
   }
 .resume .role {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 .resume * {
     color: var(--text-color);
   }
-.resume dl {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 0.5rem;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    max-width: -moz-max-content;
-    max-width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-.resume dl dt,.resume dl dd {
-      margin: 0;
-    }
-.resume dl dt {
-      font-weight: 500;
-      color: var(--text-color);
-      text-align: right;
-    }
-.resume dl dt::after {
-        content: ':';
-      }
-.resume dl dd {
-      color: var(--text-color);
-    }
-.resume ul,.resume p,.resume dl {
+.resume ul,.resume p {
     font-size: 1rem;
   }
 .resume h2 {
