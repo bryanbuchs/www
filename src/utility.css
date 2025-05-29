@@ -21,7 +21,8 @@
 }
 
 .text-huge {
-  font-size: clamp(1.875rem, 1.2159rem + 1.8182vw, 2.625rem);
+  /* @link https://utopia.fyi/type/calculator?c=640,26,1.2,1240,38,1.25,0,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  font-size: clamp(1.625rem, 0.825rem + 2vw, 2.375rem);
   line-height: 1.3;
 }
 
