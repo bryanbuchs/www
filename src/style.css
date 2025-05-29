@@ -3,7 +3,8 @@
   --body: oklch(from #403f48 l c h);
   --body-light: oklch(from #686762 l c h);
   --body-dark: oklch(from #403f48 l c h);
-  --body-highlight: oklch(from #6f4e37 calc(l - 0.2) c h);
+  --body-highlight: oklch(from #ae431e calc(l - 0.1) c h);
+  --title: #000000;
   --link: #374259;
   --link-hover: oklch(from var(--link) calc(l - 0.1) c h);
   --marker: var(--body-light);
@@ -18,7 +19,8 @@
     --body-light: oklch(from #ffffff l c h);
     --body-dark: oklch(from #ffffff calc(l + 0.05) l c h);
 
-    --body-highlight: var(--body-dark);
+    --body-highlight: #facfad;
+    --title: #f5ac72;
 
     --link: oklch(from #e7d7ca l c h);
     --marker: var(--body-dark);

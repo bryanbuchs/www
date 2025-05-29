@@ -17,15 +17,15 @@ header {
 
     a {
       display: inline-block;
-      color: var(--body-dark);
+      color: var(--title);
       text-decoration: none;
 
-      &:hover, &:focus {
-        color: oklch(from var(--body-dark) calc(l + 0.075) c h);
+      &:hover,
+      &:focus {
+        color: oklch(from var(--title) calc(l + 0.075) c h);
         text-decoration: underline;
         text-decoration-thickness: 2px;
         text-underline-offset: 2px;
-
       }
     }
 
