@@ -958,12 +958,19 @@ footer {
     font-size: 1rem;
   }
 @media print {
+  @page {
+    size: letter portrait;
+  }
+
+  html,
+  body {
+    background-color: #fff;
+  }
+
   body {
     font-size: 20px;
     margin: 0;
-    padding: 0;
-    background-color: #fff;
-    padding: 0;
+    padding: 20px;
   }
 
   .container {
@@ -975,13 +982,19 @@ footer {
     margin-top: 0;
   }
 
-  header,h1 {
+  header,
+  h1 {
     margin-top: 0;
+  }
+
+  h2 {
+    page-break-before: auto;
   }
 
   p,
   li {
     page-break-inside: avoid;
+    /* orphans: 3; */
   }
 
   a {
