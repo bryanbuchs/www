@@ -6,7 +6,7 @@ description: Experienced front-end developer specializing in web accessibility a
 
 Hi there! I'm Bryan Buchs, a web developer with nearly three decades of experience crafting accessible, responsive, and user-friendly digital experiences.{.popout .text-huge .text-center}
 
-I've been building websites since, well, pretty much since there's been an internet. I started my journey in the mid-90s when I discovered "View Source" in Netscape Navigator, and I was instantly hooked. Throughout my career, I've transformed alongside the web itself. While HTML remains the faithful constant in my toolkit, I've continuously embraced new technologies—from the early days of table-based layouts to today's modern frameworks like Vue.js.
+I've been building websites since... well, pretty much since there's been an internet. I started my journey in the mid-90s when I discovered "View Source" in Netscape Navigator, and I was instantly hooked. Throughout my career, I've transformed alongside the web itself. While HTML remains the faithful constant in my toolkit, I've continuously embraced new technologies—from the early days of table-based layouts to today's modern frameworks like Vue.js.
 
 I've had the privilege of building solutions for amazing organizations like Stanford University, Howard Hughes Medical Institute, PBS, as well as other arts and educational institutions. My passion lies in creating websites that everyone can use, regardless of ability. That's why I've championed WCAG accessibility standards across all projects.
 
