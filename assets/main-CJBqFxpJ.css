@@ -878,7 +878,7 @@ body {
   grid-column: full;
 }
 header {
-  grid-column: primary;
+  grid-column: popout;
 
   border-bottom: 1px solid var(--body-light);
   padding-bottom: 1rem;
@@ -924,13 +924,11 @@ header p.tagline {
     color: var(--body-light);
   }
 footer {
-  grid-column: primary;
+  grid-column: popout;
 
   margin-top: 1rem;
   border-top: 1px solid var(--body-light);
   padding-top: 1rem;
-
-
 }
 
   .resume h1 {
@@ -1462,7 +1460,7 @@ div.pswp__img--placeholder,
   }
 
 :where(figure) figcaption {
-    margin-top: 0.85rem;
+    margin-top: 0.5rem;
     font-size: 0.85rem;
     line-height: 1.4;
     text-align: center;
