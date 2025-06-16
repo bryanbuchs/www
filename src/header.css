@@ -1,5 +1,5 @@
 header {
-  grid-column: primary;
+  grid-column: popout;
 
   border-bottom: 1px solid var(--body-light);
   padding-bottom: 1rem;
