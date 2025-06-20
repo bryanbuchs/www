@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ title | default("Bryan Buchs - Senior Web Developer & Accessibility Specialist") }}</title>
+    <meta name="description" content="{{ description | default("Experienced front-end developer specializing in web accessibility and responsive design.") }}"/>
+    <meta name="author" content="Bryan Buchs"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://bryanbuchs.com{{ page.url }}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>
+  </head>
+  <body class="container resume">
+    <header>
+      <h1>Bryan Buchs</h1>
+      <p class="role">Senior Drupal Developer & Solutions Architect</p>
+
+      <dl>
+        <dt class="visually-hidden">Home</dt>
+        <dd>Shorewood, Wisconsin, USA</dd>
+
+        <dt class="visually-hidden">Email</dt>
+        <dd>
+          <a href="mailto:bryan@bryanbuchs.com">bryan@bryanbuchs.com</a>
+        </dd>
+
+        <dt class="visually-hidden">Phone</dt>
+        <dd>+1 414.246.7050</dd>
+
+        <dt class="visually-hidden">GitHub</dt>
+        <dd>
+          <a href="https://github.com/bryanbuchs" target="_blank">github.com/bryanbuchs</a>
+        </dd>
+
+        <dt class="visually-hidden">LinkedIn</dt>
+        <dd>
+          <a href="https://www.linkedin.com/in/bryan-buchs-314656341" target="_blank">linkedin.com/in/bryan-buchs-314656341</a>
+        </dd>
+      </dl>
+
+    </header>
+    <main class="container">
+      {{ content | safe }}
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
