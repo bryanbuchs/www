@@ -27,10 +27,6 @@
     fetch(link.href, fetchOpts);
   }
 })();
-/*!
-  * PhotoSwipe 5.4.4 - https://photoswipe.com
-  * (c) 2024 Dmytro Semenov
-  */
 function createElement$1(className, tagName, appendToEl) {
   const el = document.createElement(tagName);
   if (className) {
@@ -4567,10 +4563,6 @@ class PhotoSwipe extends PhotoSwipeBase$1 {
     };
   }
 }
-/*!
-  * PhotoSwipe Lightbox 5.4.4 - https://photoswipe.com
-  * (c) 2024 Dmytro Semenov
-  */
 function createElement(className, tagName, appendToEl) {
   const el = document.createElement(tagName);
   if (className) {
