@@ -15,9 +15,21 @@ Seasoned Web Developer with nearly 30 years of experience creating responsive, p
 
 ## Professional Experience
 
-2007-Present: Lead Developer, Kapow, Inc.
+### 2026–Present: Freelance Web Developer, Wildwood Digital LLC
 
-Leading all web development initiatives and maintenance for prestigious clients, including Stanford University, PBS, and major cultural institutions.
+Independent consultancy continuing client work previously performed at Kapow, Inc.
+
+- Contracted with HHMI BioInteractive to maintain and extend the same suite of educational web applications developed over the previous decade, including the Interactive Video Builder and interactive science tools
+- Continued Drupal theming and custom module development, Vue.js SPA work, and accessibility-focused front-end development
+
+### 2025–Present: Part-Time Web Developer, Stanford University
+
+- Continuing work on Stanford web properties previously managed through Kapow, Inc., including Stanford Online and Stanford Enterprise Education
+- Drupal theming, custom module development, and WCAG 2.1 AA accessibility compliance
+
+### 2007–2025: Lead Developer, Kapow, Inc.
+
+Led all web development initiatives and maintenance for prestigious clients, including Stanford University, PBS, and major cultural institutions. Kapow closed operations in December 2025.
 
 - Spearheaded initiative to achieve WCAG 2.1 AA compliance across client projects, significantly improving user accessibility
 - Significantly reduced development time for new UI components through the creation of a prompt-based CLI generator tool to scaffold Drupal theme components with Storybook integration
@@ -40,11 +52,11 @@ Developed Drupal-based enterprise websites
 Produced interactive educational web experiences with a strong focus on accessibility
 
 - Engineered intuitive, WCAG-compliant educational applications that transform complex scientific concepts into engaging learning experiences for students
-- Created an Interactive Video Builder using Drupal, H5P, and Vue.js, enabling educators to build custom quizzes from HHMI’s library of educational videos
-- Virus Explorer featured in the “Places & Spaces: Mapping Science” museum exhibit at Indiana University and selected for inclusion in the upcoming book “Atlas of Macroscopes: Interactive Data Visualizations” (MIT Press)
+- Created an Interactive Video Builder using Drupal, H5P, and Vue.js, enabling educators to build custom quizzes from HHMI's library of educational videos
+- Virus Explorer featured in the "Places & Spaces: Mapping Science" museum exhibit at Indiana University and selected for inclusion in the upcoming book "Atlas of Macroscopes: Interactive Data Visualizations" (MIT Press)
 - Central Dogma and Genetic Medicine BioCommunications Association: Award of Excellence (2018) and Medical Education Award (2018)
 
-### Additional Notable Clients at kapow, inc.
+### Additional Notable Clients at Kapow, Inc.
 
 Web development for arts & education institutions
 
@@ -55,9 +67,9 @@ Web development for arts & education institutions
 
 ### Earlier Career
 
-- 2006-2007: Web Developer, Nelson Schmidt
-- 2005-2006: Freelance Web Developer
-- 2002-2004: Lead Developer, Layer One Media
-- 1999-2002: Lead Developer, StarkMedia
-- 1998-1999: Web Developer, Executive Director, Inc.
-- 1996-1998: Graphic Designer / Web Designer, Enterprise Magazines
+- 2006–2007: Web Developer, Nelson Schmidt
+- 2005–2006: Freelance Web Developer
+- 2002–2004: Lead Developer, Layer One Media
+- 1999–2002: Lead Developer, StarkMedia
+- 1998–1999: Web Developer, Executive Director, Inc.
+- 1996–1998: Graphic Designer / Web Designer, Enterprise Magazines
