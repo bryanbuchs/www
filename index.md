@@ -10,7 +10,9 @@ I've been building websites since... well, pretty much since there's been an int
 
 I've had the privilege of building solutions for amazing organizations like Stanford University, Howard Hughes Medical Institute, PBS, as well as other arts and educational institutions. My passion lies in creating websites that everyone can use, regardless of ability. That's why I've championed WCAG accessibility standards across all projects.
 
-Here's a showcase of my favorite projects from my time at [kapow, inc](https://kapowinc.com){target='_blank'}. Each of these sites presented unique challenges that pushed my skills as a developer and resulted in work I'm truly proud of. Click through to dive deeper into the details and see what went into creating these digital experiences.
+Most recently, I've been working independently through my own consultancy, Wildwood Digital LLC, continuing client relationships with Stanford University and HHMI BioInteractive that I've built over many years.
+
+Here's a showcase of my favorite projects spanning my career, including work done at [kapow, inc](https://kapowinc.com){target='_blank'} and through my own consultancy, Wildwood Digital LLC. Each of these sites presented unique challenges that pushed my skills as a developer and resulted in work I'm truly proud of. Click through to dive deeper into the details and see what went into creating these digital experiences.
 
 <div class="screenshots feature">
 
