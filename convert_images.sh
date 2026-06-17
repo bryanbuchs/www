@@ -10,17 +10,17 @@ for img in ./src/images/*.png; do
   [ -f "$img" ] || continue  # Skip if no matches found
   filename=$(basename -- "$img")
   name="${filename%.*}"
-  convert "$img" -resize 1400x -quality 80 "./public/images/screenshots/${name}.webp"
+  magick "$img" -resize 1400x -quality 80 "./public/images/screenshots/${name}.webp"
   echo "- ${name}"
 done
 
-# Task 2: Scale originals to 300px wide and save as WebP with 80% quality
+# Task 2: Scale originals to 520px wide and save as WebP
 echo "Thumbnails:"
 for img in ./src/images/*.png; do
   [ -f "$img" ] || continue  # Skip if no matches found
   filename=$(basename -- "$img")
   name="${filename%.*}"
-  convert "$img" \
+  magick "$img" \
     -filter Mitchell \
     -resize 520x \
     -unsharp 0.25x0.25+8+0.065 \

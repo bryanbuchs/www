@@ -16,11 +16,11 @@ I helped develop the frontend for BioInteractive's Interactive Video Builder, an
     <a href="/images/screenshots/hhmi-video.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="2871">
       <img
         src="/images/thumbnails/hhmi-video.webp"
-      alt="screenshot of HHMI BioInteractive Video Builder website"
+      alt="A 'Create your own interactive video' page with a grid of BioInteractive video cards - each showing a thumbnail, title, description, and a 'Create Interactive Video' button - alongside a sidebar of topic and content filters."
         loading="lazy"/>
     </a>
     <figcaption>
-      Interactive Video Builder
+      Browsing the video library
     </figcaption>
   </figure>
 
@@ -28,11 +28,11 @@ I helped develop the frontend for BioInteractive's Interactive Video Builder, an
     <a href="/images/screenshots/hhmi-video-4.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1049">
       <img
         src="/images/thumbnails/hhmi-video-4.webp"
-      alt="screenshot of HHMI BioInteractive Video Builder website"
+      alt="The student view of an interactive video, shown in the site's Spanish interface, with a multiple-choice question overlaid on a paused video; the question gives feedback on the chosen answer and tracks the score, with a description of the film alongside."
         loading="lazy"/>
     </a>
     <figcaption>
-      Interactive Video Builder
+      Student view, in Spanish
     </figcaption>
   </figure>
 

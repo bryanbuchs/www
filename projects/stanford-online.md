@@ -13,10 +13,10 @@ I had the opportunity to build the frontend for Stanford Online, the university'
 <div class="screenshots">
 
   <figure>
-    <a href="/images/screenshots/stanford-online.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="4262">
+    <a href="/images/screenshots/stanford-online.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="3827">
       <img
         src="/images/thumbnails/stanford-online.webp"
-        alt="screenshot of Stanford Online website"
+        alt="A homepage with a dark hero pairing a '30 Years of Stanford Online' anniversary mark with the headline 'Empowering Learners to Shape Tomorrow, Today' and a course search box, followed by a learner-statistics row, an 'Explore Our Programs' grid of four category cards, featured courses and programs, and an upcoming-events section."
         loading="lazy"/>
     </a>
     <figcaption>
@@ -25,10 +25,10 @@ I had the opportunity to build the frontend for Stanford Online, the university'
   </figure>
 
   <figure>
-    <a href="/images/screenshots/stanford-online-2.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="2229">
+    <a href="/images/screenshots/stanford-online-2.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="2350">
       <img
         src="/images/thumbnails/stanford-online-2.webp"
-        alt="screenshot of Course/Program search page"
+        alt="A faceted search page: a row of filter dropdowns and a search bar above a grid of course cards, each with a thumbnail, title, the offering Stanford school, and enrollment details."
         loading="lazy"/>
     </a>
     <figcaption>
@@ -46,7 +46,7 @@ The most challenging aspect was integrating with Stanford's massive course datab
     <a href="/images/screenshots/stanford-online-3.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="3831">
       <img
         src="/images/thumbnails/stanford-online-3.webp"
-        alt="screenshot of Course detail page"
+        alt="A course page for 'Artificial Intelligence: Principles and Techniques', with the title and core competencies beside an enrollment sidebar, followed by flexible learning options, student testimonials, the teaching team, and related courses."
         loading="lazy"/>
     </a>
     <figcaption>
@@ -58,7 +58,7 @@ The most challenging aspect was integrating with Stanford's massive course datab
     <a href="/images/screenshots/stanford-online-4.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="5148">
       <img
         src="/images/thumbnails/stanford-online-4.webp"
-        alt="screenshot of Program detail page"
+        alt="A program page for the Advanced Cybersecurity Program, with an enrollment card and overview up top, then key details, the courses included in the program, learning outcomes, the program directors, and related offerings."
         loading="lazy"/>
     </a>
     <figcaption>

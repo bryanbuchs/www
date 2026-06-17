@@ -16,7 +16,7 @@ I helped develop "Biomolecules on the Menu", an immersive educational Vue single
     <a href="/images/screenshots/hhmi-biomolecules.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1218">
       <img
         src="/images/thumbnails/hhmi-biomolecules.webp"
-        alt="Screenshot of an educational webpage titled 'Biomolecules on the Menu'. The page features a hamburger logo in the top left corner and a hamburger menu icon in the top right. The main content displays a human body outline with visible circulatory system in red and blue, and a small sandwich illustration to the left. Text overlaid on the body diagram reads: 'Biomolecules on the Menu. You need food to build your cells and fuel your activities. How does the food you eat provide the energy you need?' Below this is an orange button reading 'Take a bite and find out!'. At the bottom of the page is a footer with 'Supporting Information' text and logos for 'hhmi' and 'BioInteractive'."
+        alt="A landing page titled 'Biomolecules on the Menu' over an illustration of a human body and its circulatory system, asking how food provides energy, with an orange 'Take a bite and find out!' button and an HHMI BioInteractive footer."
         loading="lazy"/>
     </a>
     <figcaption>
@@ -34,7 +34,7 @@ I built the entire experience with Vue.js, creating rich SVG-based visualization
     <a href="/images/screenshots/hhmi-biomolecules-2.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1218">
       <img
         src="/images/thumbnails/hhmi-biomolecules-2.webp"
-        alt="Animated diagram of digestive system"
+        alt="A 'How is food digested?' screen on the small intestine, pairing explanatory text and nutrient icons (carbohydrates, fats, and proteins breaking into smaller molecules) with an illustrated human torso that highlights the small intestine and circulatory system and a 'Nutrients enter bloodstream' callout."
         loading="lazy"/>
     </a>
     <figcaption>
@@ -46,7 +46,7 @@ I built the entire experience with Vue.js, creating rich SVG-based visualization
     <a href="/images/screenshots/hhmi-biomolecules-3.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="1529">
       <img
         src="/images/thumbnails/hhmi-biomolecules-3.webp"
-        alt="metabolic processes diagram"
+        alt="A 'How are nutrients used for energy?' screen with toggle controls beside a detailed cellular-metabolism diagram - storage and nutrient molecules feeding into a mitochondrion through glycolysis, pyruvate oxidation, the citric acid cycle, and the electron transport chain to produce ATP."
         loading="lazy"/>
     </a>
     <figcaption>

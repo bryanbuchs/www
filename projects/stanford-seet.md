@@ -16,7 +16,7 @@ For the Stanford Enterprise Education for Transformation website, I took on the 
     <a href="/images/screenshots/stanford-seet.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="6378">
       <img
         src="/images/thumbnails/stanford-seet.webp"
-        alt="screenshot of Stanford Enterprise Education for Transformation website"
+        alt="A homepage with a campus-photo hero reading 'Empower your organization', an introductory section, a three-point focus list, a numbered three-pillar approach (Business, Engineering, Science), and a 'Making an Impact Across the Globe' section with photo cards."
         loading="lazy"/>
     </a>
     <figcaption>
@@ -28,7 +28,7 @@ For the Stanford Enterprise Education for Transformation website, I took on the 
     <a href="/images/screenshots/stanford-seet-2.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="571">
       <img
         src="/images/thumbnails/stanford-seet-2.webp"
-        alt="screenshot of Stanford Enterprise Education for Transformation website"
+        alt="A horizontal process timeline with color-coded, time-boxed stages (Discovery, Initial Design, Contracting, Program Development, Program in Session) along a top 'Stanford' track, paired with a parallel 'Client' track below for requirements gathering, recruitment, and evaluation."
         loading="lazy"/>
     </a>
     <figcaption>
