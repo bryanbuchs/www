@@ -46,11 +46,11 @@ The most challenging aspect was integrating with Stanford's massive course datab
     <a href="/images/screenshots/stanford-online-3.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="3831">
       <img
         src="/images/thumbnails/stanford-online-3.webp"
-        alt="screenshot of Program detail page"
+        alt="screenshot of Course detail page"
         loading="lazy"/>
     </a>
     <figcaption>
-      Program Details
+      Course Details
     </figcaption>
   </figure>
 
@@ -58,11 +58,11 @@ The most challenging aspect was integrating with Stanford's massive course datab
     <a href="/images/screenshots/stanford-online-4.webp" data-cropped="true" data-pswp-width="1400" data-pswp-height="5148">
       <img
         src="/images/thumbnails/stanford-online-4.webp"
-        alt="screenshot of Course detail page"
+        alt="screenshot of Program detail page"
         loading="lazy"/>
     </a>
     <figcaption>
-      Course Details
+      Program Details
     </figcaption>
   </figure>
 
