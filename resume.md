@@ -53,7 +53,7 @@ Produced interactive educational web experiences with a strong focus on accessib
 
 - Engineered intuitive, WCAG-compliant educational applications that transform complex scientific concepts into engaging learning experiences for students
 - Created an Interactive Video Builder using Drupal, H5P, and Vue.js, enabling educators to build custom quizzes from HHMI's library of educational videos
-- Virus Explorer featured in the "Places & Spaces: Mapping Science" museum exhibit at Indiana University and selected for inclusion in the upcoming book "Atlas of Macroscopes: Interactive Data Visualizations" (MIT Press)
+- Virus Explorer featured in the "Places & Spaces: Mapping Science" museum exhibit at Indiana University and selected for inclusion in the book "[Atlas of Macroscopes: Interactive Data Visualizations](https://www.amazon.com/dp/0262049929)" (MIT Press)
 - Central Dogma and Genetic Medicine BioCommunications Association: Award of Excellence (2018) and Medical Education Award (2018)
 
 ### Additional Notable Clients at Kapow, Inc.
